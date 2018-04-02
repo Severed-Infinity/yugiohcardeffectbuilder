@@ -1,1 +1,1 @@
-web: lein with-profile production trampoline run -m yugiohcardeffect.clj.core
+web: lein run -m yugiohcardeffect.clj.core
