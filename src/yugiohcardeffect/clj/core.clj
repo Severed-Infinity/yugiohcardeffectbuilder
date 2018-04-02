@@ -14,7 +14,7 @@ config
      [["" (yada/handler (file "app.html"))]
       ["resources/public/" (assoc (new-classpath-resource "public") :id :yugioheffectbuilder.resources/static)]]]
     ;;TODO environmental inputs
-    {:port (:port config)}))
+    {:port (int (:port config))}))
 
 ;;;;; ATOM Variant ;;;;;;;
 (defonce server (atom nil))
