@@ -5,7 +5,7 @@
             [aero.core :refer [read-config]]))
 
 (def config (read-config "config.edn"))
-config
+#_config
 
 ;; doesn't hold any result, just produces one
 (defn resource-routes []
@@ -14,7 +14,7 @@ config
      [["" (yada/handler (file "app.html"))]
       ["resources/public/" (assoc (new-classpath-resource "public") :id :yugioheffectbuilder.resources/static)]]]
     ;;TODO environmental inputs
-    {:port (int (:port config))}))
+    {:port (Integer. (:port config))}))
 
 ;;;;; ATOM Variant ;;;;;;;
 (defonce server (atom nil))
