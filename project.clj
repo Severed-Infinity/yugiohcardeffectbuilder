@@ -16,6 +16,7 @@
                  [re-frame "0.10.5"]]
   :plugins [[lein-cljsbuild "1.1.7"]
             [lein-figwheel "0.5.15"]]
+  :min-lein-version "2.8.1"
   :main yugiohcardeffect.clj.core
   :target-path "target/%s"
   :resource-paths ["resources"]
