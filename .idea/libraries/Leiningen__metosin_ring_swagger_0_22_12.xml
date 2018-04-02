@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: metosin/ring-swagger:0.22.12">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repository/metosin/ring-swagger/0.22.12/ring-swagger-0.22.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

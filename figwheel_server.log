@@ -1,0 +1,1031 @@
+Compiling build :main to "resources/public/js/main.js" from ["src"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.798 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 2.067 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src"]...
+[31mFailed to compile build :main from ["src"] in 1.891 seconds.[0m
+[36m----  Could not Analyze  src/yugiohcardeffectbuilder/events.cljs  ----[0m
+
+  [1mAssert failed: Circular dependency detected, yugiohcardeffectbuilder.events -> yugiohcardeffectbuilder.events
+(every? (fn* [p1__2312#] (not (contains? *cljs-dep-set* p1__2312#))) deps)[0m
+
+[36m----  Analysis Error : Please see src/yugiohcardeffectbuilder/events.cljs  ----[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 2.494 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 2.438 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.939 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.021 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.54 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.286 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/subscriptions.js
+[36m----  Couldn't load Clojure file  src/yugiohcardeffectbuilder/core.clj   line:86  column:74  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m84[0m  [36m                    [:div#app][0m
+  [36m85[0m  [36m                    (include-js "resource/public/js/main.js")[0m
+  [33m86[0m  [1m                    [:script "yugiohcardeffectbuilder.builder.load()"]])})[0m
+  [0m  [0m  [33m                                                                         ^--- Map literal must contain an even number of forms[0m
+  [36m87[0m  [36m[0m
+  [36m88[0m  [36m(defonce server (atom nil))[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.RuntimeException: Map literal must contain an even number of forms
+ at clojure.lang.Util.runtimeException (Util.java:221)
+    clojure.lang.LispReader$MapReader.invoke (LispReader.java:1160)
+    clojure.lang.LispReader.read (LispReader.java:263)
+    clojure.lang.LispReader.readDelimitedList (LispReader.java:1200)
+    clojure.lang.LispReader$ListReader.invoke (LispReader.java:1049)
+    clojure.lang.LispReader.read (LispReader.java:263)
+    clojure.lang.LispReader.read (LispReader.java:196)
+    clojure.lang.Compiler.load (Compiler.java:7374)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffectbuilder/core.clj   line:86  column:74  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m84[0m  [36m                    [:div#app][0m
+  [36m85[0m  [36m                    (include-js "resource/public/js/main.js")[0m
+  [33m86[0m  [1m                    [:script "yugiohcardeffectbuilder.builder.load()"]])})[0m
+  [0m  [0m  [33m                                                                         ^--- Map literal must contain an even number of forms[0m
+  [36m87[0m  [36m[0m
+  [36m88[0m  [36m(defonce server (atom nil))[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.RuntimeException: Map literal must contain an even number of forms
+ at clojure.lang.Util.runtimeException (Util.java:221)
+    clojure.lang.LispReader$MapReader.invoke (LispReader.java:1160)
+    clojure.lang.LispReader.read (LispReader.java:263)
+    clojure.lang.LispReader.readDelimitedList (LispReader.java:1200)
+    clojure.lang.LispReader$ListReader.invoke (LispReader.java:1049)
+    clojure.lang.LispReader.read (LispReader.java:263)
+    clojure.lang.LispReader.read (LispReader.java:196)
+    clojure.lang.Compiler.load (Compiler.java:7374)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.881 seconds.[0m
+[36m----  Couldn't load Clojure file  src/yugiohcardeffectbuilder/core.clj   line:97  column:1  ----[0m
+
+  [1mAddress already in use[0m
+
+  [36m95[0m  [36m    (reset! server nil)))[0m
+  [36m96[0m  [36m[0m
+  [33m97[0m  [1m(reset! server (run-server app {:port 8080 :timeout 10000}))[0m
+  [0m  [0m  [33m^--- Address already in use[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.net.BindException: Address already in use
+ at sun.nio.ch.Net.bind0 (Net.java:-2)
+    sun.nio.ch.Net.bind (Net.java:433)
+    sun.nio.ch.Net.bind (Net.java:425)
+    sun.nio.ch.ServerSocketChannelImpl.bind (ServerSocketChannelImpl.java:223)
+    sun.nio.ch.ServerSocketAdaptor.bind (ServerSocketAdaptor.java:74)
+    sun.nio.ch.ServerSocketAdaptor.bind (ServerSocketAdaptor.java:67)
+    org.httpkit.server.HttpServer.<init> (HttpServer.java:77)
+    org.httpkit.server$run_server.invokeStatic (server.clj:42)
+    org.httpkit.server$run_server.doInvoke (server.clj:8)
+    clojure.lang.RestFn.invoke (RestFn.java:423)
+    yugiohcardeffectbuilder.core$eval35932.invokeStatic (core.clj:97)
+    yugiohcardeffectbuilder.core$eval35932.invoke (core.clj:97)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  core.clj   line:97  column:27  ----[0m
+
+  [1mAddress already in use[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.net.BindException: Address already in use
+ at sun.nio.ch.Net.bind0 (Net.java:-2)
+    sun.nio.ch.Net.bind (Net.java:433)
+    sun.nio.ch.Net.bind (Net.java:425)
+    sun.nio.ch.ServerSocketChannelImpl.bind (ServerSocketChannelImpl.java:223)
+    sun.nio.ch.ServerSocketAdaptor.bind (ServerSocketAdaptor.java:74)
+    sun.nio.ch.ServerSocketAdaptor.bind (ServerSocketAdaptor.java:67)
+    org.httpkit.server.HttpServer.<init> (HttpServer.java:77)
+    org.httpkit.server$run_server.invokeStatic (server.clj:42)
+    org.httpkit.server$run_server.doInvoke (server.clj:8)
+    clojure.lang.RestFn.applyTo (RestFn.java:139)
+    clojure.lang.Compiler$InvokeExpr.eval (Compiler.java:3652)
+    clojure.lang.Compiler$InvokeExpr.eval (Compiler.java:3651)
+    clojure.lang.Compiler$DefExpr.eval (Compiler.java:451)
+    clojure.lang.Compiler.eval (Compiler.java:6932)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 3.859 seconds.[0m
+[36m----  Couldn't load Clojure file  core.clj   line:97  column:27  ----[0m
+
+  [1mAddress already in use[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.net.BindException: Address already in use
+ at sun.nio.ch.Net.bind0 (Net.java:-2)
+    sun.nio.ch.Net.bind (Net.java:433)
+    sun.nio.ch.Net.bind (Net.java:425)
+    sun.nio.ch.ServerSocketChannelImpl.bind (ServerSocketChannelImpl.java:223)
+    sun.nio.ch.ServerSocketAdaptor.bind (ServerSocketAdaptor.java:74)
+    sun.nio.ch.ServerSocketAdaptor.bind (ServerSocketAdaptor.java:67)
+    org.httpkit.server.HttpServer.<init> (HttpServer.java:77)
+    org.httpkit.server$run_server.invokeStatic (server.clj:42)
+    org.httpkit.server$run_server.doInvoke (server.clj:8)
+    clojure.lang.RestFn.applyTo (RestFn.java:139)
+    clojure.lang.Compiler$InvokeExpr.eval (Compiler.java:3652)
+    clojure.lang.Compiler$InvokeExpr.eval (Compiler.java:3651)
+    clojure.lang.Compiler$DefExpr.eval (Compiler.java:451)
+    clojure.lang.Compiler.eval (Compiler.java:6932)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  core.clj   line:97  column:27  ----[0m
+
+  [1mAddress already in use[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.net.BindException: Address already in use
+ at sun.nio.ch.Net.bind0 (Net.java:-2)
+    sun.nio.ch.Net.bind (Net.java:433)
+    sun.nio.ch.Net.bind (Net.java:425)
+    sun.nio.ch.ServerSocketChannelImpl.bind (ServerSocketChannelImpl.java:223)
+    sun.nio.ch.ServerSocketAdaptor.bind (ServerSocketAdaptor.java:74)
+    sun.nio.ch.ServerSocketAdaptor.bind (ServerSocketAdaptor.java:67)
+    org.httpkit.server.HttpServer.<init> (HttpServer.java:77)
+    org.httpkit.server$run_server.invokeStatic (server.clj:42)
+    org.httpkit.server$run_server.doInvoke (server.clj:8)
+    clojure.lang.RestFn.applyTo (RestFn.java:139)
+    clojure.lang.Compiler$InvokeExpr.eval (Compiler.java:3652)
+    clojure.lang.Compiler$InvokeExpr.eval (Compiler.java:3651)
+    clojure.lang.Compiler$DefExpr.eval (Compiler.java:451)
+    clojure.lang.Compiler.eval (Compiler.java:6932)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.641 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/subscriptions.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.979 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/subscriptions.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.638 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/subscriptions.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.079 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.449 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/subscriptions.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.256 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffectbuilder/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.545 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.618 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 2.039 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/subscriptions.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.779 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.063 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.755 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.844 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.519 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.918 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.151 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/builder.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/events.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.6 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/subscriptions.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.497 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/builder.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/subscriptions.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.799 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [hiccup.page :refer [include-js]][0m
+  [36m4[0m  [36m            [yada.yada :as yada]))[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:436)
+    yugiohcardeffect.clj.core$eval36506$loading__5569__auto____36507.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36506.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36506.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [hiccup.page :refer [include-js]][0m
+  [36m4[0m  [36m            [yada.yada :as yada]))[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:436)
+    yugiohcardeffect.clj.core$eval36512$loading__5569__auto____36513.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36512.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36512.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [hiccup.page :refer [include-js]][0m
+  [36m4[0m  [36m            [yada.yada :as yada]))[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:436)
+    yugiohcardeffect.clj.core$eval36518$loading__5569__auto____36519.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36518.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36518.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [yada.yada :as yada])[0m
+  [36m4[0m  [36m  (:import (java.io File)))[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:421)
+    yugiohcardeffect.clj.core$eval36524$loading__5569__auto____36525.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36524.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36524.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [yada.yada :as yada][0m
+  [36m4[0m  [36m            [aleph.http :as http])[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:436)
+    yugiohcardeffect.clj.core$eval36530$loading__5569__auto____36531.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36530.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36530.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [yada.yada :as yada][0m
+  [36m4[0m  [36m            [aleph.http :as http])[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:436)
+    yugiohcardeffect.clj.core$eval36536$loading__5569__auto____36537.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36536.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36536.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [yada.yada :as yada][0m
+  [36m4[0m  [36m            [aleph.http :as http])[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:436)
+    yugiohcardeffect.clj.core$eval36542$loading__5569__auto____36543.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36542.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36542.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [yada.yada :as yada][0m
+  [36m4[0m  [36m            [aleph.http :as http])[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:436)
+    yugiohcardeffect.clj.core$eval36548$loading__5569__auto____36549.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36548.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36548.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [yada.yada :as yada][0m
+  [36m4[0m  [36m            [aleph.http :as http])[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:436)
+    yugiohcardeffect.clj.core$eval36554$loading__5569__auto____36555.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36554.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36554.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [yada.yada :as yada][0m
+  [36m4[0m  [36m            [aleph.http :as http])[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:436)
+    yugiohcardeffect.clj.core$eval36560$loading__5569__auto____36561.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36560.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36560.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:1  column:1  ----[0m
+
+  [1mCould not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+
+  [33m1[0m  [1m(ns yugiohcardeffect.clj.core[0m
+  [0m [0m  [33m^--- Could not locate yada/yada__init.class or yada/yada.clj on classpath.[0m
+  [36m2[0m  [36m  (:require [hiccup.core :refer [html]][0m
+  [36m3[0m  [36m            [yada.yada :as yada][0m
+  [36m4[0m  [36m            [aleph.http :as http])[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.io.FileNotFoundException: Could not locate yada/yada__init.class or yada/yada.clj on classpath.
+ at clojure.lang.RT.load (RT.java:456)
+    clojure.lang.RT.load (RT.java:419)
+    clojure.core$load$fn__5677.invoke (core.clj:5893)
+    clojure.core$load.invokeStatic (core.clj:5892)
+    clojure.core$load.doInvoke (core.clj:5876)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$load_one.invokeStatic (core.clj:5697)
+    clojure.core$load_one.invoke (core.clj:5692)
+    clojure.core$load_lib$fn__5626.invoke (core.clj:5737)
+    clojure.core$load_lib.invokeStatic (core.clj:5736)
+    clojure.core$load_lib.doInvoke (core.clj:5717)
+    clojure.lang.RestFn.applyTo (RestFn.java:142)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$load_libs.invokeStatic (core.clj:5774)
+    clojure.core$load_libs.doInvoke (core.clj:5758)
+    clojure.lang.RestFn.applyTo (RestFn.java:137)
+    clojure.core$apply.invokeStatic (core.clj:648)
+    clojure.core$require.invokeStatic (core.clj:5796)
+    clojure.core$require.doInvoke (core.clj:5796)
+    clojure.lang.RestFn.invoke (RestFn.java:436)
+    yugiohcardeffect.clj.core$eval36566$loading__5569__auto____36567.invoke (core.clj:1)
+    yugiohcardeffect.clj.core$eval36566.invokeStatic (core.clj:1)
+    yugiohcardeffect.clj.core$eval36566.invoke (core.clj:1)
+    clojure.lang.Compiler.eval (Compiler.java:6927)
+    clojure.lang.Compiler.eval (Compiler.java:6916)
+    clojure.lang.Compiler.load (Compiler.java:7379)
+    clojure.lang.Compiler.loadFile (Compiler.java:7317)
+    clojure.lang.RT$3.invoke (RT.java:320)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__27628.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__27661.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__27716.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__27758.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3063$fn__3064.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3063.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__4676.invoke (core.clj:1941)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:14  column:1  ----[0m
+
+  [1mAddress already in use[0m
+
+  [33m14[0m  [1m(resource-routes)[0m
+  [0m  [0m  [33m^--- Address already in use[0m
+  [36m15[0m  [36m#_(println (resource-routes))[0m
+  [36m16[0m  [36m#_((:close (resource-routes)))[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.net.BindException: Address already in use
+ at sun.nio.ch.Net.bind0 (Net.java:-2)
+    sun.nio.ch.Net.bind (Net.java:433)
+    sun.nio.ch.Net.bind (Net.java:425)
+    sun.nio.ch.ServerSocketChannelImpl.bind (ServerSocketChannelImpl.java:223)
+    io.netty.channel.socket.nio.NioServerSocketChannel.doBind (NioServerSocketChannel.java:128)
+    io.netty.channel.AbstractChannel$AbstractUnsafe.bind (AbstractChannel.java:554)
+    io.netty.channel.DefaultChannelPipeline$HeadContext.bind (DefaultChannelPipeline.java:1258)
+    io.netty.channel.AbstractChannelHandlerContext.invokeBind (AbstractChannelHandlerContext.java:501)
+    io.netty.channel.AbstractChannelHandlerContext.bind (AbstractChannelHandlerContext.java:486)
+    io.netty.channel.DefaultChannelPipeline.bind (DefaultChannelPipeline.java:980)
+    io.netty.channel.AbstractChannel.bind (AbstractChannel.java:250)
+    io.netty.bootstrap.AbstractBootstrap$2.run (AbstractBootstrap.java:365)
+    io.netty.util.concurrent.AbstractEventExecutor.safeExecute (AbstractEventExecutor.java:163)
+    io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks (SingleThreadEventExecutor.java:403)
+    io.netty.channel.nio.NioEventLoop.run (NioEventLoop.java:462)
+    io.netty.util.concurrent.SingleThreadEventExecutor$5.run (SingleThreadEventExecutor.java:858)
+    io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run (DefaultThreadFactory.java:138)
+    java.lang.Thread.run (Thread.java:745)
+

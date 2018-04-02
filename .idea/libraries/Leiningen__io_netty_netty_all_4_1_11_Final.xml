@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: io.netty/netty-all:4.1.11.Final">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repository/io/netty/netty-all/4.1.11.Final/netty-all-4.1.11.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
