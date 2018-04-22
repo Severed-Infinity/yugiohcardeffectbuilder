@@ -8,7 +8,11 @@
     (-> state
         (assoc-in [:card-name] "")
         (assoc-in [:trigger :state] false)
-        (assoc-in [:activation-limit :state] :turn)
+        (assoc-in [:activation-limit :type] :turn)
+        (assoc-in [:activation-limit :count] :once)
+        (assoc-in [:timing :relativity] :during)
+
+
         (assoc-in [:activation-restriction :state] false)
         (assoc-in [:activation-restriction :only] false)
         (assoc-in [:activation-restriction :count] :once)
@@ -36,9 +40,19 @@
     (assoc-in state [:trigger :state] active)))
 
 (rf/reg-event-db
-  :activation-limit-state-update
+  :activation-limit-type-update
   (fn [state [_ value]]
-    (assoc-in state [:activation-limit :state] value)))
+    (assoc-in state [:activation-limit :type] value)))
+
+(rf/reg-event-db
+  :activation-limit-count-update
+  (fn [state [_ value]]
+    (assoc-in state [:activation-limit :count] value)))
+
+(rf/reg-event-db
+  :timing-relativity-update
+  (fn [state [_ value]]
+    (assoc-in state [:timing :relativity] value)))
 
 
 

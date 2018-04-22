@@ -5,24 +5,34 @@ goog.require('re_frame.core');
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"card-name","card-name",-2035606807),(function (state,_){
 return new cljs.core.Keyword(null,"card-name","card-name",-2035606807).cljs$core$IFn$_invoke$arity$1(state);
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"trigger-state","trigger-state",-1285376437),(function (state,p__59534){
-var vec__59535 = p__59534;
-var _ = cljs.core.nth.call(null,vec__59535,(0),null);
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"trigger-state","trigger-state",-1285376437),(function (state,p__61309){
+var vec__61310 = p__61309;
+var _ = cljs.core.nth.call(null,vec__61310,(0),null);
 return new cljs.core.Keyword(null,"state","state",-1988618099).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"trigger","trigger",103466139).cljs$core$IFn$_invoke$arity$1(state));
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-limit-state","activation-limit-state",-331224212),(function (state,p__59538){
-var vec__59539 = p__59538;
-var _ = cljs.core.nth.call(null,vec__59539,(0),null);
-return new cljs.core.Keyword(null,"state","state",-1988618099).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"activation-limit","activation-limit",733694351).cljs$core$IFn$_invoke$arity$1(state));
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-limit-type","activation-limit-type",618952784),(function (state,p__61313){
+var vec__61314 = p__61313;
+var _ = cljs.core.nth.call(null,vec__61314,(0),null);
+return new cljs.core.Keyword(null,"type","type",1174270348).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"activation-limit","activation-limit",733694351).cljs$core$IFn$_invoke$arity$1(state));
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-restriction-state","activation-restriction-state",-298832249),(function (state,p__59542){
-var vec__59543 = p__59542;
-var _ = cljs.core.nth.call(null,vec__59543,(0),null);
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-limit-count","activation-limit-count",-1200000259),(function (state,p__61317){
+var vec__61318 = p__61317;
+var _ = cljs.core.nth.call(null,vec__61318,(0),null);
+return new cljs.core.Keyword(null,"count","count",2139924085).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"activation-limit","activation-limit",733694351).cljs$core$IFn$_invoke$arity$1(state));
+}));
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"timing-relativity","timing-relativity",-1710064006),(function (state,p__61321){
+var vec__61322 = p__61321;
+var _ = cljs.core.nth.call(null,vec__61322,(0),null);
+return new cljs.core.Keyword(null,"relativity","relativity",-1195946453).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"timing","timing",-1849225195).cljs$core$IFn$_invoke$arity$1(state));
+}));
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-restriction-state","activation-restriction-state",-298832249),(function (state,p__61325){
+var vec__61326 = p__61325;
+var _ = cljs.core.nth.call(null,vec__61326,(0),null);
 return new cljs.core.Keyword(null,"state","state",-1988618099).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"activation-restriction","activation-restriction",1637227284).cljs$core$IFn$_invoke$arity$1(state));
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-restriction-only","activation-restriction-only",-1866107215),(function (state,p__59546){
-var vec__59547 = p__59546;
-var _ = cljs.core.nth.call(null,vec__59547,(0),null);
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-restriction-only","activation-restriction-only",-1866107215),(function (state,p__61329){
+var vec__61330 = p__61329;
+var _ = cljs.core.nth.call(null,vec__61330,(0),null);
 return new cljs.core.Keyword(null,"only","only",1907811652).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"activation-restriction","activation-restriction",1637227284).cljs$core$IFn$_invoke$arity$1(state));
 }));
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-restriction-count","activation-restriction-count",1371961212),(function (state,_){
@@ -56,4 +66,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"once-per-include-pla
 return new cljs.core.Keyword(null,"include-player","include-player",865133756).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"once-per","once-per",-1282559935).cljs$core$IFn$_invoke$arity$1(state));
 }));
 
-//# sourceMappingURL=subscriptions.js.map?rel=1524411105395
+//# sourceMappingURL=subscriptions.js.map?rel=1524438116166

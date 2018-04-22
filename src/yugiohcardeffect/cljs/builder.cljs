@@ -18,13 +18,44 @@
   []
   [:fieldset
    ;;TODO offer to turn on and off as an option
-   [:legend "Activation limiters - Once per… trigger portion, also known as the when/how often."]
+   [:legend "Activation limiters - Once per… trigger portion, also known as how often."]
    [:p "The activation limiter options get more specific as you go down the list."]
-   ;;TODO missing count options.
-   [:span "Once per "]
+   [:select {:name      "activation-limit-count"
+             :on-change #(event % (rf/dispatch [:activation-limit-count-update (keyword (.. % -target -value))]))}
+    [:option {:name  "once"
+              :value :once}
+     "Once"]
+    [:option {:name  "twice"
+              :value :twice}
+     "Twice"]
+    [:option {:name  "thrice"
+              :value :thrice}
+     "Thrice"]
+    [:option {:name  "four"
+              :value :four-times}
+     "Four Times"]
+    [:option {:name  "five"
+              :value :five-times}
+     "Five Times"]
+    [:option {:name  "six"
+              :value :six-times}
+     "Six Times"]
+    [:option {:name  "seven"
+              :value :seven-times}
+     "Seven Times"]
+    [:option {:name  "eight"
+              :value :eight-times}
+     "Eight Times"]
+    [:option {:name  "nine"
+              :value :nine-times}
+     "Nine Times"]
+    [:option {:name  "ten"
+              :value :ten-times}
+     "Ten Times"]]
+   [:span " per "]
    [:select {:name         "activation-limit-options"
              :defaultValue :turn
-             :on-change    #(event % @(rf/dispatch [:activation-limit-state-update (keyword (.. % -target -value))]))}
+             :on-change    #(event % @(rf/dispatch [:activation-limit-type-update (keyword (.. % -target -value))]))}
     ;;FIXME make sure I've all actions, phase, and steps covered. turn, phase, step, action(summons?) in that order
     [:option {:name  "once-per-duel"
               :value :duel}
@@ -65,14 +96,34 @@
      "battle"]
     [:option {:name  "once-per-chain"
               :value :chain}
-     "chain"]]
+     "chain"]
+    [:option {:name  "once-per-damage-calculation"
+              :value :damage-calculation}
+     "damage calculations"]]
    [:p "needs to be updated dynamically, with tips?"]])
 
 (defn timing-limits
   "builder for the timing (e.g. during the…) portion of the view"
   []
   [:fieldset
-   [:legend "Timing limiters - During… trigger portion."]])
+   [:legend "Timing limiters - During… trigger portion, also known as when"]
+   [:select {:name "timing-relativity-options"
+             :on-change #(event % @(rf/dispatch [:timing-relativity-update (keyword (.. % -target -value))]))}
+    [:option {:name "during"
+              :value :during}
+     "During"]
+    [:option {:name "before"
+              :value :before}
+     "Before"]
+    [:option {:name "after"
+              :value :after}
+     "After"]
+    [:option {:name "at-the-start-of"
+              :value :at-the-start-of}
+     "At the start of"]
+    [:option {:name "at-the-end-of"
+              :value :at-the-end-of}
+     "At the end of"]]])
 
 (defn trigger
   "View for all trigger components"

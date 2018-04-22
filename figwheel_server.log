@@ -1234,3 +1234,72 @@ notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/c
 Compiling build :main to "resources/public/js/main.js" from ["src/"]...
 [32mSuccessfully compiled build :main to "resources/public/js/main.js" in 2.231 seconds.[0m
 notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 14.913 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[36m----  Compiler Warning on   src/yugiohcardeffect/cljs/events.cljs   line:44  column:1  ----[0m
+
+  [1mWrong number of args (1) passed to re-frame.core/reg-event-db[0m
+
+  [36m40[0m  [36m  :activation-limit-state-update[0m
+  [36m41[0m  [36m  (fn [state [_ value]][0m
+  [36m42[0m  [36m    (assoc-in state [:activation-limit :state] value)))[0m
+  [36m43[0m  [36m[0m
+  [33m44[0m  [1m(rf/reg-event-db[0m
+  [0m  [0m  [33m^--- Wrong number of args (1) passed to re-frame.core/reg-event-db[0m
+  [36m45[0m  [36m  :a)[0m
+
+[36m----  Compiler Warning : Please see src/yugiohcardeffect/cljs/events.cljs  ----[0m
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.104 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 6.085 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 2.716 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.282 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.689 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.168 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.801 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.875 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 4.416 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 2.353 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.857 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.297 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.799 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 2.241 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 3.124 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js

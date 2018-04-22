@@ -13,9 +13,19 @@
     (:state (:trigger state))))
 
 (rf/reg-sub
-  :activation-limit-state
+  :activation-limit-type
   (fn [state [_]]
-    (:state (:activation-limit state))))
+    (:type (:activation-limit state))))
+
+(rf/reg-sub
+  :activation-limit-count
+  (fn [state [_]]
+    (:count (:activation-limit state))))
+
+(rf/reg-sub
+  :timing-relativity
+  (fn [state [_]]
+    (:relativity (:timing state))))
 
 
 
