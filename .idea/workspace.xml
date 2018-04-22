@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3978b8ec-fce9-4545-adff-c8c16254b9bf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj" afterPath="$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/figwheel_server.log" afterPath="$PROJECT_DIR$/figwheel_server.log" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/.figwheel-compile-stamp" afterPath="$PROJECT_DIR$/resources/public/js/out/.figwheel-compile-stamp" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/spec/alpha.cljs.cache.json" afterPath="$PROJECT_DIR$/resources/public/js/out/cljs/spec/alpha.cljs.cache.json" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.cljs" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.cljs" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.cljs.cache.json" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.cljs.cache.json" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.js" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.js" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.js.map" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.js.map" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.cljs" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.cljs" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.cljs.cache.json" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.cljs.cache.json" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.js" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.js" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.js.map" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.js.map" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.cljs" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.cljs" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.cljs.cache.json" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.cljs.cache.json" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js.map" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js.map" />
+      <change beforePath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs" afterPath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs" />
+      <change beforePath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs" afterPath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs" />
+      <change beforePath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs" afterPath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,41 +34,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="project.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.edn" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.edn">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="builder.cljs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="builder.cljs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4143">
-              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="-890">
+              <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding>
+                <element signature="e#3149#6073#0" expanded="false" />
+                <element signature="e#6075#7205#0" expanded="false" />
+                <element signature="e#11136#12452#0" expanded="false" />
+                <element signature="e#12454#15580#0" expanded="false" />
+                <element signature="e#15582#15751#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subscriptions.cljs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
+      <file leaf-file-name="events.cljs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="573">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="99" column="6" lean-forward="true" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
+            <state relative-caret-position="317">
+              <caret line="100" column="8" lean-forward="false" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -107,18 +131,19 @@
         <option value="$PROJECT_DIR$/src/yugiohcardeffect/builder.cljs" />
         <option value="$PROJECT_DIR$/src/cljs/yugiohcardeffect/events.cljs" />
         <option value="$PROJECT_DIR$/src/yugiohcardeffects/cljs/events.cljs" />
-        <option value="$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs" />
         <option value="$PROJECT_DIR$/src/yugiohcardeffect/clj/something.cljs" />
-        <option value="$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs" />
         <option value="$PROJECT_DIR$/app.html" />
         <option value="$PROJECT_DIR$/config.edn" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj" />
+        <option value="$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs" />
+        <option value="$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs" />
+        <option value="$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -331,7 +356,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -398,8 +423,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,7 +447,7 @@
       <recent name="$PROJECT_DIR$/src/cljs/yugiohcardeffect" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1522705190342">{:repl-history {:ide [], :local [{:command &quot;(yugioh-card-effect-builder state)&quot;, :offset 34, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(run-server page {:port 5000})&quot;, :offset 30, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server #'app {:port 5000}))&quot;, :offset 47, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server #'app {:port 80800}))&quot;, :offset 48, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server #'app {:port 8080}))&quot;, :offset 47, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server app {:port 8080}))&quot;, :offset 45, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server app {:port 5000}))&quot;, :offset 45, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(defn app [req]\n  {:status  200\n   :headers {\&quot;Content-Type\&quot; \&quot;text/html\&quot;}\n   :body    (html [:html\n                   [:head\n                    [:title \&quot;YuGiOh Card Effect Builder\&quot;]]\n\n                   [:body\n                    [:div#app\n                     [:h1 \&quot;Loading\&quot;]]\n                    (include-js \&quot;resources/javascript/main.js\&quot;)]])})&quot;, :offset 346, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server app {:timeout 100}))&quot;, :offset 47, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(defn stop-server []\n  (when-not (nil? @server)\n    ;; graceful shutdown: wait 100ms for existing requests to be finished\n    ;; :timeout is optional, when no timeout, stop immediately\n    (@server :timeout 100)\n    (reset! server nil)))&quot;, :offset 237, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server app {:port 8080 :timeout 100}))&quot;, :offset 58, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(defn app [req]\n  {:status  200\n   :headers {\&quot;Content-Type\&quot; \&quot;text/html\&quot;}\n   :body    (slurp (clojure.java.io/resource \&quot;app.html\&quot;))\n            #_(html [:html]\n                   [:head\n                    [:title \&quot;YuGiOh Card Effect Builder\&quot;]]\n\n                   [:body\n                    [:div#app]\n                    (include-js \&quot;resource/public/js/main.js\&quot;)\n                    [:script \&quot;yugiohcardeffectbuilder.builder.load()\&quot;]])})&quot;, :offset 438, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(def start (reset! server (run-server app {:port 8080 :timeout 10000})))&quot;, :offset 72, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(yada/handler (new File \&quot;app.html\&quot;))&quot;, :offset 36, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(http/start-server (yada/handler (new File \&quot;app.html\&quot;)) {:port 8080})&quot;, :offset 69, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(http/start-server (yada/handler (new File \&quot;app.html\&quot;)) {:port 8000})&quot;, :offset 69, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(+ 1 1)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def start (http/start-server (ring/make-handler resource-routes) {:port 5000}))&quot;, :offset 80, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(start)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println @resource-routes)&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (:server resource-routes))&quot;, :offset 35, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;/\&quot;\n     (yada/handler (new File \&quot;app.html\&quot;))]\n    {:port 5000}))&quot;, :offset 112, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     {\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))\n      \&quot;/resources/public/js/\&quot; (yada/handler (file \&quot;resources/public/js/main.js\&quot;))}]\n    {:port 5000}))&quot;, :offset 195, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n     [\&quot;/resources/public/js/\&quot; (yada/handler (file \&quot;resources/public/js/main.js\&quot;))]]\n    {:port 5000}))&quot;, :offset 196, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n     [\&quot;/resources/public/js/\&quot; (yada/handler (yada.resources.classpath-resource \&quot;resources/public/js/main.js\&quot;))]]\n    {:port 5000}))&quot;, :offset 225, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n     [\&quot;/resources/public/js/\&quot; (yada/handler (yada.resources.classpath-resource/new-classpath-resource \&quot;resources/public/js/main.js\&quot;))]]\n    {:port 5000}))&quot;, :offset 248, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n     [\&quot;/resources/\&quot; (yada/handler (yada.resources.classpath-resource/new-classpath-resource \&quot;public/\&quot;))]]\n    {:port 5000}))&quot;, :offset 218, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [[\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;/resources/\&quot; (yada/handler (resource \&quot;public/\&quot;))]]]\n    {:port 5000}))&quot;, :offset 173, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [[\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;/resources/public/js/\&quot; (file  \&quot;resources/public/js/main.js\&quot;)]]]\n    {:port 5000}))&quot;, :offset 185, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [[\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;/\&quot; (yada/handler (new-classpath-resource \&quot;\&quot;))]]]\n    {:port 5000}))&quot;, :offset 170, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;/\&quot;\n     [[\&quot;\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;\&quot; (yada/handler (resource \&quot;\&quot;))]]]\n    {:port 5000}))&quot;, :offset 155, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(file \&quot;app.html\&quot;)&quot;, :offset 17, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(new-classpath-resource \&quot;\&quot;)&quot;, :offset 27, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(new-classpath-resource \&quot;public\&quot;)&quot;, :offset 33, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;/\&quot;\n     [[\&quot;\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;\&quot; (yada/handler (new-classpath-resource \&quot;public/js/main.js\&quot;))]]]\n    {:port 5000}))&quot;, :offset 186, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (resource-routes))&quot;, :offset 27, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println resource-routes)&quot;, :offset 25, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(:close (resource-routes))&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(resource \&quot;public/js/main.js\&quot;)&quot;, :offset 30, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(:close resource-routes)&quot;, :offset 24, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def reload-routes\n  (do\n    ((:close resource-routes))\n    resource-routes))&quot;, :offset 77, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(:server resource-routes)&quot;, :offset 25, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(resourcex-routes)&quot;, :offset 18, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;((:close (resource-routes)))&quot;, :offset 28, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(resource-routes)&quot;, :offset 17, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(((:close (resource-routes))))&quot;, :offset 30, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def reload-routes\n    (do\n      ((:close (resource-routes)))\n      (resource-routes)))&quot;, :offset 87, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;reload-routes&quot;, :offset 13, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;resource-routes&quot;, :offset 15, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;((:close resource-routes))&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def reload-routes\n    (do\n      ((:close resource-routes))\n      resource-routes))&quot;, :offset 83, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (:close resource-routes))&quot;, :offset 34, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println ((:close resource-routes)))&quot;, :offset 36, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start! [] (reset! server (resource-routes)))&quot;, :offset 50, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;start!&quot;, :offset 6, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn -main []\n  (start!))&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(-main)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println @server)&quot;, :offset 17, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(start!)&quot;, :offset 8, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(reload!)&quot;, :offset 9, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defonce server2 (agent nil))&quot;, :offset 29, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 (send server2 reset! (resource-routes)))&quot;, :offset 53, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defonce server2 (agent {}))&quot;, :offset 28, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 (send server2 (resource-routes)))&quot;, :offset 46, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 [] (send server2 (resource-routes)))&quot;, :offset 49, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(stop!)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn stop2 [] (send server2 ((:close @server2))))&quot;, :offset 50, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn stop2 [] (send server2 (when (:close @server2) ((:close @server2)))))&quot;, :offset 75, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(restart-agent server2 {})&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;stop2&quot;, :offset 5, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn reload2 []\n  (do \n    (stop2)\n    (start2)))&quot;, :offset 50, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(reload2)&quot;, :offset 9, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 []\n  (send server2\n        #(do\n           (println \&quot;Starting 2...\&quot;)\n           (merge %)) \n        (resource-routes)))&quot;, :offset 132, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(add-watch\n  server2\n  :starting\n  (fn [key server2 old new]\n    (when (nil? new)\n      (do\n        (prn key 'failed (agent-error server2))\n        (restart-agent server2 old)))\n    (when (empty? old)\n      (prn key new))))&quot;, :offset 223, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (:close @server2))&quot;, :offset 27, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println @server2)&quot;, :offset 18, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(agent-error server2)&quot;, :offset 21, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(restart-agent server2 @server2)&quot;, :offset 32, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(stop2)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(start2)&quot;, :offset 8, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def config (read-config \&quot;config.edn\&quot;))&quot;, :offset 39, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;config&quot;, :offset 6, :ns &quot;yugiohcardeffect.clj.core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1524414253086">{:repl-history {:ide [], :local [{:command &quot;(yugioh-card-effect-builder state)&quot;, :offset 34, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(run-server page {:port 5000})&quot;, :offset 30, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server #'app {:port 5000}))&quot;, :offset 47, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server #'app {:port 80800}))&quot;, :offset 48, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server #'app {:port 8080}))&quot;, :offset 47, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server app {:port 8080}))&quot;, :offset 45, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server app {:port 5000}))&quot;, :offset 45, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(defn app [req]\n  {:status  200\n   :headers {\&quot;Content-Type\&quot; \&quot;text/html\&quot;}\n   :body    (html [:html\n                   [:head\n                    [:title \&quot;YuGiOh Card Effect Builder\&quot;]]\n\n                   [:body\n                    [:div#app\n                     [:h1 \&quot;Loading\&quot;]]\n                    (include-js \&quot;resources/javascript/main.js\&quot;)]])})&quot;, :offset 346, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server app {:timeout 100}))&quot;, :offset 47, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(defn stop-server []\n  (when-not (nil? @server)\n    ;; graceful shutdown: wait 100ms for existing requests to be finished\n    ;; :timeout is optional, when no timeout, stop immediately\n    (@server :timeout 100)\n    (reset! server nil)))&quot;, :offset 237, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(reset! server (run-server app {:port 8080 :timeout 100}))&quot;, :offset 58, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(defn app [req]\n  {:status  200\n   :headers {\&quot;Content-Type\&quot; \&quot;text/html\&quot;}\n   :body    (slurp (clojure.java.io/resource \&quot;app.html\&quot;))\n            #_(html [:html]\n                   [:head\n                    [:title \&quot;YuGiOh Card Effect Builder\&quot;]]\n\n                   [:body\n                    [:div#app]\n                    (include-js \&quot;resource/public/js/main.js\&quot;)\n                    [:script \&quot;yugiohcardeffectbuilder.builder.load()\&quot;]])})&quot;, :offset 438, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(def start (reset! server (run-server app {:port 8080 :timeout 10000})))&quot;, :offset 72, :ns &quot;yugiohcardeffectbuilder.core&quot;} {:command &quot;(yada/handler (new File \&quot;app.html\&quot;))&quot;, :offset 36, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(http/start-server (yada/handler (new File \&quot;app.html\&quot;)) {:port 8080})&quot;, :offset 69, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(http/start-server (yada/handler (new File \&quot;app.html\&quot;)) {:port 8000})&quot;, :offset 69, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(+ 1 1)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def start (http/start-server (ring/make-handler resource-routes) {:port 5000}))&quot;, :offset 80, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(start)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println @resource-routes)&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (:server resource-routes))&quot;, :offset 35, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;/\&quot;\n     (yada/handler (new File \&quot;app.html\&quot;))]\n    {:port 5000}))&quot;, :offset 112, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     {\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))\n      \&quot;/resources/public/js/\&quot; (yada/handler (file \&quot;resources/public/js/main.js\&quot;))}]\n    {:port 5000}))&quot;, :offset 195, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n     [\&quot;/resources/public/js/\&quot; (yada/handler (file \&quot;resources/public/js/main.js\&quot;))]]\n    {:port 5000}))&quot;, :offset 196, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n     [\&quot;/resources/public/js/\&quot; (yada/handler (yada.resources.classpath-resource \&quot;resources/public/js/main.js\&quot;))]]\n    {:port 5000}))&quot;, :offset 225, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n     [\&quot;/resources/public/js/\&quot; (yada/handler (yada.resources.classpath-resource/new-classpath-resource \&quot;resources/public/js/main.js\&quot;))]]\n    {:port 5000}))&quot;, :offset 248, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n     [\&quot;/resources/\&quot; (yada/handler (yada.resources.classpath-resource/new-classpath-resource \&quot;public/\&quot;))]]\n    {:port 5000}))&quot;, :offset 218, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [[\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;/resources/\&quot; (yada/handler (resource \&quot;public/\&quot;))]]]\n    {:port 5000}))&quot;, :offset 173, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [[\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;/resources/public/js/\&quot; (file  \&quot;resources/public/js/main.js\&quot;)]]]\n    {:port 5000}))&quot;, :offset 185, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;\&quot;\n     [[\&quot;/\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;/\&quot; (yada/handler (new-classpath-resource \&quot;\&quot;))]]]\n    {:port 5000}))&quot;, :offset 170, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;/\&quot;\n     [[\&quot;\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;\&quot; (yada/handler (resource \&quot;\&quot;))]]]\n    {:port 5000}))&quot;, :offset 155, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(file \&quot;app.html\&quot;)&quot;, :offset 17, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(new-classpath-resource \&quot;\&quot;)&quot;, :offset 27, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(new-classpath-resource \&quot;public\&quot;)&quot;, :offset 33, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;/\&quot;\n     [[\&quot;\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;\&quot; (yada/handler (new-classpath-resource \&quot;public/js/main.js\&quot;))]]]\n    {:port 5000}))&quot;, :offset 186, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (resource-routes))&quot;, :offset 27, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println resource-routes)&quot;, :offset 25, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(:close (resource-routes))&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(resource \&quot;public/js/main.js\&quot;)&quot;, :offset 30, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(:close resource-routes)&quot;, :offset 24, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def reload-routes\n  (do\n    ((:close resource-routes))\n    resource-routes))&quot;, :offset 77, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(:server resource-routes)&quot;, :offset 25, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(resourcex-routes)&quot;, :offset 18, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;((:close (resource-routes)))&quot;, :offset 28, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(resource-routes)&quot;, :offset 17, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(((:close (resource-routes))))&quot;, :offset 30, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def reload-routes\n    (do\n      ((:close (resource-routes)))\n      (resource-routes)))&quot;, :offset 87, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;reload-routes&quot;, :offset 13, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;resource-routes&quot;, :offset 15, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;((:close resource-routes))&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def reload-routes\n    (do\n      ((:close resource-routes))\n      resource-routes))&quot;, :offset 83, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (:close resource-routes))&quot;, :offset 34, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println ((:close resource-routes)))&quot;, :offset 36, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start! [] (reset! server (resource-routes)))&quot;, :offset 50, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;start!&quot;, :offset 6, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn -main []\n  (start!))&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(-main)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println @server)&quot;, :offset 17, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(reload!)&quot;, :offset 9, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defonce server2 (agent nil))&quot;, :offset 29, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 (send server2 reset! (resource-routes)))&quot;, :offset 53, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defonce server2 (agent {}))&quot;, :offset 28, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 (send server2 (resource-routes)))&quot;, :offset 46, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 [] (send server2 (resource-routes)))&quot;, :offset 49, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn stop2 [] (send server2 ((:close @server2))))&quot;, :offset 50, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn stop2 [] (send server2 (when (:close @server2) ((:close @server2)))))&quot;, :offset 75, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(restart-agent server2 {})&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;stop2&quot;, :offset 5, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn reload2 []\n  (do \n    (stop2)\n    (start2)))&quot;, :offset 50, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(reload2)&quot;, :offset 9, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 []\n  (send server2\n        #(do\n           (println \&quot;Starting 2...\&quot;)\n           (merge %)) \n        (resource-routes)))&quot;, :offset 132, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(add-watch\n  server2\n  :starting\n  (fn [key server2 old new]\n    (when (nil? new)\n      (do\n        (prn key 'failed (agent-error server2))\n        (restart-agent server2 old)))\n    (when (empty? old)\n      (prn key new))))&quot;, :offset 223, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (:close @server2))&quot;, :offset 27, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println @server2)&quot;, :offset 18, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(agent-error server2)&quot;, :offset 21, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(restart-agent server2 @server2)&quot;, :offset 32, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(stop2)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(start2)&quot;, :offset 8, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def config (read-config \&quot;config.edn\&quot;))&quot;, :offset 39, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;config&quot;, :offset 6, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;/\&quot;\n     [[\&quot;\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;resources/public/\&quot; (assoc (new-classpath-resource \&quot;public\&quot;) :id :yugioheffectbuilder.resources/static)]]]\n    ;;TODO environmental inputs\n    {:port (Integer. (:port config))}))&quot;, :offset 280, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(start!)&quot;, :offset 8, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(stop!)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -538,19 +563,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.51221" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31196582" sideWeight="0.5053435" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25457877" sideWeight="0.5053435" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.4946565" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958034" sideWeight="0.48779" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30830282" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23076923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -804,27 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/yada/core/1.2.11/core-1.2.11.jar!/yada/resource.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-597">
@@ -874,26 +878,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.edn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -906,19 +894,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs">
+    <entry file="file://$PROJECT_DIR$/resources/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4143">
-          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.edn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="99" column="6" lean-forward="true" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
+        <state relative-caret-position="317">
+          <caret line="100" column="8" lean-forward="false" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-890">
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#3149#6073#0" expanded="false" />
+            <element signature="e#6075#7205#0" expanded="false" />
+            <element signature="e#11136#12452#0" expanded="false" />
+            <element signature="e#12454#15580#0" expanded="false" />
+            <element signature="e#15582#15751#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

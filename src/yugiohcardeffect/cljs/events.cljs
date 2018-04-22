@@ -7,6 +7,8 @@
     ;{:once-per :no}
     (-> state
         (assoc-in [:card-name] "")
+        (assoc-in [:trigger :state] false)
+        (assoc-in [:activation-limit :state] :turn)
         (assoc-in [:activation-restriction :state] false)
         (assoc-in [:activation-restriction :only] false)
         (assoc-in [:activation-restriction :count] :once)
@@ -25,6 +27,22 @@
   :card-name-update
   (fn [state [_ name]]
     (assoc-in state [:card-name] name)))
+
+;;; Triggers ;;;;
+
+(rf/reg-event-db
+  :trigger-state-update
+  (fn [state [_ active]]
+    (assoc-in state [:trigger :state] active)))
+
+(rf/reg-event-db
+  :activation-limit-state-update
+  (fn [state [_ value]]
+    (assoc-in state [:activation-limit :state] value)))
+
+
+
+
 
 ;;; activation restrictions ;;;
 (rf/reg-event-db

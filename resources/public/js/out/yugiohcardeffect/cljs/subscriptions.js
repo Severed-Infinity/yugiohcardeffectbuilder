@@ -5,14 +5,24 @@ goog.require('re_frame.core');
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"card-name","card-name",-2035606807),(function (state,_){
 return new cljs.core.Keyword(null,"card-name","card-name",-2035606807).cljs$core$IFn$_invoke$arity$1(state);
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-restriction-state","activation-restriction-state",-298832249),(function (state,p__52046){
-var vec__52047 = p__52046;
-var _ = cljs.core.nth.call(null,vec__52047,(0),null);
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"trigger-state","trigger-state",-1285376437),(function (state,p__59534){
+var vec__59535 = p__59534;
+var _ = cljs.core.nth.call(null,vec__59535,(0),null);
+return new cljs.core.Keyword(null,"state","state",-1988618099).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"trigger","trigger",103466139).cljs$core$IFn$_invoke$arity$1(state));
+}));
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-limit-state","activation-limit-state",-331224212),(function (state,p__59538){
+var vec__59539 = p__59538;
+var _ = cljs.core.nth.call(null,vec__59539,(0),null);
+return new cljs.core.Keyword(null,"state","state",-1988618099).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"activation-limit","activation-limit",733694351).cljs$core$IFn$_invoke$arity$1(state));
+}));
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-restriction-state","activation-restriction-state",-298832249),(function (state,p__59542){
+var vec__59543 = p__59542;
+var _ = cljs.core.nth.call(null,vec__59543,(0),null);
 return new cljs.core.Keyword(null,"state","state",-1988618099).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"activation-restriction","activation-restriction",1637227284).cljs$core$IFn$_invoke$arity$1(state));
 }));
-re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-restriction-only","activation-restriction-only",-1866107215),(function (state,p__52050){
-var vec__52051 = p__52050;
-var _ = cljs.core.nth.call(null,vec__52051,(0),null);
+re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-restriction-only","activation-restriction-only",-1866107215),(function (state,p__59546){
+var vec__59547 = p__59546;
+var _ = cljs.core.nth.call(null,vec__59547,(0),null);
 return new cljs.core.Keyword(null,"only","only",1907811652).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"activation-restriction","activation-restriction",1637227284).cljs$core$IFn$_invoke$arity$1(state));
 }));
 re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"activation-restriction-count","activation-restriction-count",1371961212),(function (state,_){
@@ -46,4 +56,4 @@ re_frame.core.reg_sub.call(null,new cljs.core.Keyword(null,"once-per-include-pla
 return new cljs.core.Keyword(null,"include-player","include-player",865133756).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"once-per","once-per",-1282559935).cljs$core$IFn$_invoke$arity$1(state));
 }));
 
-//# sourceMappingURL=subscriptions.js.map?rel=1521587779301
+//# sourceMappingURL=subscriptions.js.map?rel=1524411105395

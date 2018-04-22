@@ -6,6 +6,23 @@
   (fn [state _]
     (:card-name state)))
 
+;;; Tiggers ;;;;
+(rf/reg-sub
+  :trigger-state
+  (fn [state [_]]
+    (:state (:trigger state))))
+
+(rf/reg-sub
+  :activation-limit-state
+  (fn [state [_]]
+    (:state (:activation-limit state))))
+
+
+
+
+
+
+
 ;;; restrictions ;;;;
 (rf/reg-sub
   :activation-restriction-state

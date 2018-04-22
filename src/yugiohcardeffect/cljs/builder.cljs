@@ -13,6 +13,80 @@
   (.preventDefault e)
   dispatch)
 
+(defn activation-limits
+  "builder for the once per… portion of the view"
+  []
+  [:fieldset
+   ;;TODO offer to turn on and off as an option
+   [:legend "Activation limiters - Once per… trigger portion, also known as the when/how often."]
+   [:p "The activation limiter options get more specific as you go down the list."]
+   ;;TODO missing count options.
+   [:span "Once per "]
+   [:select {:name         "activation-limit-options"
+             :defaultValue :turn
+             :on-change    #(event % @(rf/dispatch [:activation-limit-state-update (keyword (.. % -target -value))]))}
+    ;;FIXME make sure I've all actions, phase, and steps covered. turn, phase, step, action(summons?) in that order
+    [:option {:name  "once-per-duel"
+              :value :duel}
+     "duel"]
+    [:option {:name  "once-per-turn"
+              :value :turn}
+     "turn"]
+    [:option {:name  "once-per-opponents-turn"
+              :value :opponents-turn}
+     "opponent's turn"]
+    ;;Not used on existing cards but here for consistency sake.
+    [:option {:name  "once-per-draw-phase"
+              :value :draw-phase}
+     "Draw Phase"]
+    [:option {:name  "once-per-standby-phase"
+              :value :standby-phase}
+     "Standby Phase"]
+    [:option {:name  "once-per-main-phase"
+              :value :main-phase}
+     "Main Phase"]
+    [:option {:name  "once-per-main-phase-1"
+              :value :main-phase-1}
+     "Main Phase 1"]
+    [:option {:name  "once-per-main-phase-2"
+              :value :main-phase-2}
+     "Main Phase 2"]
+    [:option {:name  "once-per-end-phase"
+              :value :end-phase}
+     "End Phase"]
+    [:option {:name  "once-per-battle-phase"
+              :value :battle-phase}
+     "Battle Phase"]
+    [:option {:name  "once-per-damage-step"
+              :value :damage-step}
+     "Damage Step"]
+    [:option {:name  "once-per-battle"
+              :value :battle}
+     "battle"]
+    [:option {:name  "once-per-chain"
+              :value :chain}
+     "chain"]]
+   [:p "needs to be updated dynamically, with tips?"]])
+
+(defn timing-limits
+  "builder for the timing (e.g. during the…) portion of the view"
+  []
+  [:fieldset
+   [:legend "Timing limiters - During… trigger portion."]])
+
+(defn trigger
+  "View for all trigger components"
+  []
+  [:fieldset
+   [:legend "Effect triggers - enable? "
+    [:input {:type      "checkbox"
+             :name      "enable-trigger"
+             :checked   @(rf/subscribe [:trigger-state])
+             :on-change #(event % (rf/dispatch [:trigger-state-update (.. % -target -checked)]))}]]
+   (when (true? @(rf/subscribe [:trigger-state]))
+     [:div
+      (activation-limits)
+      (timing-limits)])])
 
 ;;TODO change name when done
 ;;TODO help descriptions of what each options do as a text box beside them
@@ -265,10 +339,11 @@
             :value     @(rf/subscribe [:card-name])
             :on-change #(event % (rf/dispatch [:card-name-update (.. % -target -value)]))}]
 
-   (activation-conditions)
-   (view-activation-condition-effect)
-   (limit-activation)
-   (view-effect)
+   (trigger)
+   #_(activation-conditions)
+   #_(view-activation-condition-effect)
+   #_(limit-activation)
+   #_(view-effect)
 
    [:pre (with-out-str (pprint @re-frame.db/app-db))]
 
