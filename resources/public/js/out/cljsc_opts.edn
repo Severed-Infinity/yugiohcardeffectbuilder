@@ -1,0 +1,1 @@
+{:main yugiohcardeffect.cljs.builder, :output-to "resources/public/js/main.js", :optimizations :none, :pretty-print true, :output-dir "resources/public/js/out", :source-map-timestamp true, :preloads [figwheel.connect], :external-config #:figwheel{:config {:build-id "dev", :websocket-url "ws://localhost:3449/figwheel-ws"}}}
