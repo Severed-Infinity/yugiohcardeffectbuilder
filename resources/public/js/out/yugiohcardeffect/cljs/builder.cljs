@@ -168,6 +168,9 @@
    [:legend "Timing limiters - During… trigger portion, also known as when"]
    [:select {:name      "timing-relativity-options"
              :on-change #(event % @(rf/dispatch [:timing-relativity-update (keyword (.. % -target -value))]))}
+    [:option {:name  "none"
+              :value :none}
+     "None"]
     [:option {:name  "during"
               :value :during}
      "During"]
@@ -184,37 +187,39 @@
               :value :at-the-end-of}
      "At the end of"]]
 
-   [:select {:name "instant-target-options"
-             ;;todo on-change event and subscription
-             :on-change #()}
-    [:option {:name "the"
-              :value :the}
-     "the"]
-    [:option {:name "that"
-              :value :that}
-     "that"]
-    [:option {:name "this"
-              :value :this}
-     "this"]
-    [:option {:name "each"
-              :value :each}
-     "each"]
-    [:option {:name "either"
-              :value :either}
-     "either"]
-    [:option {:name "your"
-              :value :your}
-     "your"]
-    [:option {:name "a"
-              :value :a}
-     "a"]]
+   (when (not (= @(rf/subscribe [:timing-relativity]) :none))
+     [:span
+      [:select {:name      "instant-target-options"
+                ;;todo on-change event and subscription
+                :on-change #()}
+       [:option {:name  "the"
+                 :value :the}
+        "the"]
+       [:option {:name  "that"
+                 :value :that}
+        "that"]
+       [:option {:name  "this"
+                 :value :this}
+        "this"]
+       [:option {:name  "each"
+                 :value :each}
+        "each"]
+       [:option {:name  "either"
+                 :value :either}
+        "either"]
+       [:option {:name  "your"
+                 :value :your}
+        "your"]
+       [:option {:name  "a"
+                 :value :a}
+        "a"]]
 
-   [:select {:name "state-action-options"
-             ;;todo on-change event and subscription
-             :on-change #()}
-    [:option {:name "draw-phase"
-              :value :draw-phase}
-     "Draw Phase"]]])
+      [:select {:name      "state-action-options"
+                ;;todo on-change event and subscription
+                :on-change #()}
+       [:option {:name  "draw-phase"
+                 :value :draw-phase}
+        "Draw Phase"]]])])
 
 (defn trigger-conditions
   "Builder for the rigger conditions portion of the view"
@@ -497,7 +502,7 @@
     #_(view-effect)
 
     [:pre (with-out-str (pprint @re-frame.db/app-db))]
-    [explanations-view]]])
+    #_[explanations-view]]])
 
 
 (defn list-all [items]
