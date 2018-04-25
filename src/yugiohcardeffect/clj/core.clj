@@ -2,7 +2,9 @@
   (:require [yada.yada :as yada]
             [yada.resources.classpath-resource :refer [new-classpath-resource]]
             [clojure.java.io :refer [file resource]]
-            [aero.core :refer [read-config]]))
+            [clojure.string :refer [join]]
+            [aero.core :refer [read-config]]
+            [clojure.math.combinatorics :as combo]))
 
 (def config (read-config "config.edn"))
 #_config
@@ -102,6 +104,42 @@
 #_(println @server)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;(defn list-all [items]
+;  (transduce
+;    (comp (map combo/permutations)
+;          cat)
+;    conj
+;    []
+;    (rest (sort-by count (combo/subsets items)))))
+;
+;(defn keywords-list
+;  [keywords]
+;  (transduce
+;    (comp
+;      (map (partial join ","))
+;      (map #(assoc {:name "keywords" :content ""} :content %))
+;      (map #(identity [:meta %])))
+;    conj
+;    (list-all keywords)))
+;
+;(keywords-list ["YuGiOh" "custom"])
+;(list-all ["yugioh" "custom"])
 
 
 

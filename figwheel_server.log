@@ -1303,3 +1303,109 @@ notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/c
 Compiling build :main to "resources/public/js/main.js" from ["src/"]...
 [32mSuccessfully compiled build :main to "resources/public/js/main.js" in 3.124 seconds.[0m
 notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 2.152 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.865 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.24 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.741 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.874 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.524 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.42 seconds.[0m
+[36m----  Couldn't load Clojure file  src/yugiohcardeffect/clj/core.clj   line:125  column:1  ----[0m
+
+  [1mWrong number of args (2) passed to: PersistentVector[0m
+
+  [36m123[0m  [36m    (list-all keywords)))[0m
+  [36m124[0m  [36m[0m
+  [33m125[0m  [1m(keywords-list ["YuGiOh" "custom"])[0m
+  [0m   [0m  [33m^--- Wrong number of args (2) passed to: PersistentVector[0m
+  [36m126[0m  [36m(list-all ["yugioh" "custom"])[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+clojure.lang.ArityException: Wrong number of args (2) passed to: PersistentVector
+ at clojure.lang.AFn.throwArity (AFn.java:429)
+    clojure.lang.AFn.invoke (AFn.java:36)
+    clojure.core$map$fn__5583$fn__5584.invoke (core.clj:2734)
+    clojure.core$map$fn__5583$fn__5584.invoke (core.clj:2734)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:341)
+    clojure.core$transduce.invokeStatic (core.clj:6803)
+    clojure.core$transduce.invoke (core.clj:6790)
+    yugiohcardeffect.clj.core$keywords_list.invokeStatic (core.clj:116)
+    yugiohcardeffect.clj.core$keywords_list.invoke (core.clj:114)
+    yugiohcardeffect.clj.core$eval59922.invokeStatic (core.clj:125)
+    yugiohcardeffect.clj.core$eval59922.invoke (core.clj:125)
+    clojure.lang.Compiler.eval (Compiler.java:7062)
+    clojure.lang.Compiler.load (Compiler.java:7514)
+    clojure.lang.Compiler.loadFile (Compiler.java:7452)
+    clojure.lang.RT$3.invoke (RT.java:325)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__29778.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__29811.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__29866.invoke (cljs_autobuild.clj:80)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__29908.invoke (cljs_autobuild.clj:234)
+    figwheel_sidecar.utils$sync_exec$fn__3555$fn__3556.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__3555.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__5476.invoke (core.clj:2025)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.18 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.753 seconds.[0m
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[36m----  Compiler Warning on   src/yugiohcardeffect/cljs/builder.cljs   line:460  column:21  ----[0m
+
+  [1mUse of undeclared Var yugiohcardeffect.cljs.builder/join[0m
+
+  [36m456[0m  [36m(defn keywords-list[0m
+  [36m457[0m  [36m  [keywords][0m
+  [36m458[0m  [36m  (transduce[0m
+  [36m459[0m  [36m    (comp[0m
+  [33m460[0m  [1m      (map (partial join ","))[0m
+  [0m   [0m  [33m                    ^--- Use of undeclared Var yugiohcardeffect.cljs.builder/join[0m
+  [36m461[0m  [36m      (map #(assoc {:name "keywords" :content ""} :content %))[0m
+  [36m462[0m  [36m      (map #(identity [:meta %])))[0m
+  [36m463[0m  [36m    conj[0m
+  [36m464[0m  [36m    (list-all keywords)))[0m
+
+[36m----  Compiler Warning : Please see src/yugiohcardeffect/cljs/builder.cljs  ----[0m
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 2.024 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.328 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.965 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.717 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.438 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.764 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 0.803 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :main to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :main to "resources/public/js/main.js" in 1.085 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js

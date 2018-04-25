@@ -3,7 +3,9 @@
             [re-frame.core :as rf]
             [cljs.pprint :refer [pprint]]
             [yugiohcardeffect.cljs.events]
-            [yugiohcardeffect.cljs.subscriptions]))
+            [yugiohcardeffect.cljs.subscriptions]
+            [clojure.math.combinatorics :as combo]
+            [clojure.string :refer [join]]))
 
 (enable-console-print!)
 
@@ -444,8 +446,33 @@
      [:br]
      "\"Each player\" can replace \"You\" to imply you can both use the effect but the restriction is applied individually."]]])
 
+(defn list-all [items]
+  (transduce
+    (comp (map combo/permutations)
+          cat)
+    conj
+    []
+    (rest (sort-by count (combo/subsets items)))))
+
+(defn keywords-list
+  [keywords]
+  (transduce
+    (comp
+      (map (partial join ","))
+      (map #(assoc {:name "keywords" :content ""} :content %))
+      (map #(identity [:meta %])))
+    conj
+    (list-all keywords)))
+
 (defn ^:export load []
   (do
     (rf/dispatch-sync [:initialize])
     (r/render-component [app-view] (.getElementById js/document "app"))
     (js/console.log "loaded")))
+
+(defn ^:export gen-keywords
+  []
+  (do
+    (map
+      (.appendChild (.getElementsByTagName js/document "head"))
+      (keywords-list ["YuGiOh" "custom"]))))
