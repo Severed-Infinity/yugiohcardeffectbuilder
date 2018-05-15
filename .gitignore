@@ -97,4 +97,4 @@ Temporary Items
 # End of https://www.gitignore.io/api/macos,intellij
 
 target/
-resources/public/js/out
+resources/public/js/out/*

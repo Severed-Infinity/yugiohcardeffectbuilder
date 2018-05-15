@@ -1,6 +1,8 @@
 (ns yugiohcardeffect.cljs.subscriptions
   (:require [re-frame.core :as rf]))
 
+
+;;TODO update to namespace'd keys
 (rf/reg-sub
   :card-name
   (fn [state _]
@@ -26,6 +28,16 @@
   :timing-relativity
   (fn [state [_]]
     (:relativity (:timing state))))
+
+(rf/reg-sub
+  :timing-target-indicator
+  (fn [state [_]]
+    (:target-indicator (:timing state))))
+
+(rf/reg-sub
+  :timing-type
+  (fn [state [_]]
+    (:type (:timing state))))
 
 
 

@@ -194,8 +194,12 @@
      [:span
       ;;TODO should be changed to target-indicator instead of instant target
       [:select {:name      "instant-target-options"
+                :defaultValue :the
                 ;;todo on-change event and subscription
                 :on-change #()}
+       [:option {:name  "none"
+                 :value :none}
+        "none"]
        [:option {:name  "the"
                  :value :the}
         "the"]
@@ -218,12 +222,28 @@
                  :value :a}
         "a"]]
 
+      ;;TODO Attempt to reduce repetition by moving common views into their own var
       [:select {:name      "state-action-options"
                 ;;todo on-change event and subscription
                 :on-change #()}
        [:option {:name  "draw-phase"
                  :value :draw-phase}
-        "Draw Phase"]]])])
+        "Draw Phase"]
+       [:option {:name  "standby-phase"
+                 :value :standby-phase}
+        "Standby Phase"]
+       [:option {:name  "main-phase"
+                 :value :main-phase}
+        "Main Phase"]
+       [:option {:name  "battle-phase"
+                 :value :battle-phase}
+        "Battle Phase"]
+       [:option {:name  "damage-calculation"
+                 :value :damage-calculation}
+        "damage calculation"]
+       [:option {:name  "end-phase"
+                 :value :end-phase}
+        "End Phase"]]])])
 
 (defn trigger-conditions
   "Builder for the rigger conditions portion of the view"
