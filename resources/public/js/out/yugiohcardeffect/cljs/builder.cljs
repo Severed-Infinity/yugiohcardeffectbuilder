@@ -14,6 +14,7 @@
   (.preventDefault e)
   dispatch)
 
+;;TODO use some kind of marker in selection menus to indicate common values found on real cards
 (def tips {})
 
 ;;;;;;;;;;;;; VIEWS ;;;;;;;;;;;;
@@ -203,6 +204,14 @@
        [:option {:name  "the"
                  :value :the}
         "the"]
+       ;;never seen before
+       ;;FIXME the following two don't belong here but are here for reference 
+       [:option {:name  "the-next"
+                 :value :the-next}
+        "the next"]
+       [:option {:name  "the-same"
+                 :value :the-same}
+        "the same"]
        [:option {:name  "that"
                  :value :that}
         "that"]
@@ -235,15 +244,27 @@
        [:option {:name  "main-phase"
                  :value :main-phase}
         "Main Phase"]
+       [:option {:name  "main-phase-1"
+                 :value :main-phase-1}
+        "Main Phase 1"]
+       [:option {:name  "main-phase-2"
+                 :value :main-phase-2}
+        "Main Phase 2"]
        [:option {:name  "battle-phase"
                  :value :battle-phase}
         "Battle Phase"]
        [:option {:name  "damage-calculation"
                  :value :damage-calculation}
         "damage calculation"]
+       [:option {:name  "damage-step"
+                 :value :damage-step}
+        "Damage Step"]
        [:option {:name  "end-phase"
                  :value :end-phase}
-        "End Phase"]]])])
+        "End Phase"]
+       [:option {:name  "turn"
+                 :value :turn}
+        "turn"]]])])
 
 (defn trigger-conditions
   "Builder for the rigger conditions portion of the view"
