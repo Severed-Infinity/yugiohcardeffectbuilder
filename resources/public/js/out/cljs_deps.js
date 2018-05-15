@@ -35,7 +35,7 @@ goog.addDependency("../reagent/impl/util.js", ['reagent.impl.util'], ['reagent.i
 goog.addDependency("../reagent/impl/batching.js", ['reagent.impl.batching'], ['reagent.impl.util', 'reagent.interop', 'cljs.core', 'reagent.debug', 'clojure.string']);
 goog.addDependency("../reagent/ratom.js", ['reagent.ratom'], ['reagent.impl.util', 'cljs.core', 'reagent.impl.batching', 'clojure.set', 'reagent.debug']);
 goog.addDependency("../cljsjs/react/development/react.inc.js", ['react', 'cljsjs.react'], [], {'foreign-lib': true});
-goog.addDependency("../cljsjs/create-react-class/development/create-react-class.inc.js", ['cljsjs.create_react_class', 'create_react_class'], ['react'], {'foreign-lib': true});
+goog.addDependency("../cljsjs/create-react-class/development/create-react-class.inc.js", ['create_react_class', 'cljsjs.create_react_class'], ['react'], {'foreign-lib': true});
 goog.addDependency("../reagent/impl/component.js", ['reagent.impl.component'], ['create_react_class', 'reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'react', 'cljs.core', 'reagent.impl.batching', 'reagent.debug']);
 goog.addDependency("../reagent/impl/template.js", ['reagent.impl.template'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'react', 'cljs.core', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'clojure.string', 'clojure.walk']);
 goog.addDependency("../cljsjs/react-dom/development/react-dom.inc.js", ['react_dom', 'cljsjs.react.dom'], ['react'], {'foreign-lib': true});

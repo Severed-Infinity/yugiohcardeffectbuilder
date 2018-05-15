@@ -14,6 +14,8 @@
   (.preventDefault e)
   dispatch)
 
+(def tips {})
+
 ;;;;;;;;;;;;; VIEWS ;;;;;;;;;;;;
 
 (defn explanations-view []
@@ -159,6 +161,7 @@
         "damage calculations"]]])
 
    (when (not (= @(rf/subscribe [:activation-limit-count]) :none))
+     ;;TODO pull from a map of tips
      [:p "needs to be updated dynamically, with tips?"])])
 
 (defn timing-limits
@@ -189,6 +192,7 @@
 
    (when (not (= @(rf/subscribe [:timing-relativity]) :none))
      [:span
+      ;;TODO should be changed to target-indicator instead of instant target
       [:select {:name      "instant-target-options"
                 ;;todo on-change event and subscription
                 :on-change #()}

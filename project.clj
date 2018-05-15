@@ -13,7 +13,7 @@
                  [yada "1.2.11"]
                  [aero "1.1.3"]
 
-                 [reagent "0.8.0"]
+                 [reagent "0.8.1"]
                  [re-frame "0.10.5"]]
   :plugins [[lein-cljsbuild "1.1.7"]]
 

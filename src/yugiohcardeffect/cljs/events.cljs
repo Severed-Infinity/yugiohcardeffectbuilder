@@ -1,6 +1,7 @@
 (ns yugiohcardeffect.cljs.events
   (:require [re-frame.core :as rf]))
 
+;;TODO change to namespace'd values
 (rf/reg-event-db
   :initialize
   (fn [state _]
@@ -11,7 +12,7 @@
         (assoc-in [:activation-limit :type] :turn)
         (assoc-in [:activation-limit :count] :none)
         (assoc-in [:timing :relativity] :none)
-        (assoc-in [:timing :instant-target] :the)
+        (assoc-in [:timing :target-indicator] :the)
         (assoc-in [:timing :type] :main-phase)
 
 
@@ -55,6 +56,16 @@
   :timing-relativity-update
   (fn [state [_ value]]
     (assoc-in state [:timing :relativity] value)))
+
+(rf/reg-event-db
+  :timing-target-indicator-update
+  (fn [state [_ value]]
+    (assoc-in state [:timing :target-indicator] value)))
+
+(rf/reg-event-db
+  :timing-type-update
+  (fn [state [_ value]]
+    (assoc-in state [:timing :type] value)))
 
 
 

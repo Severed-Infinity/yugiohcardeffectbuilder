@@ -4,4 +4,4 @@ goog.require('cljs.core');
 goog.require('re_frame.interop');
 re_frame.db.app_db = re_frame.interop.ratom.call(null,cljs.core.PersistentArrayMap.EMPTY);
 
-//# sourceMappingURL=db.js.map?rel=1524683830704
+//# sourceMappingURL=db.js.map?rel=1526415184696
