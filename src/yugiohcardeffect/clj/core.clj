@@ -118,8 +118,6 @@
 
 
 
-
-
 ;(defn list-all [items]
 ;  (transduce
 ;    (comp (map combo/permutations)

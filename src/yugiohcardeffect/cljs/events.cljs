@@ -9,26 +9,29 @@
     (-> state
         (assoc-in [:card-name] "")
         (assoc-in [:trigger :state] false)
-        (assoc-in [:activation-limit :type] :turn)
-        (assoc-in [:activation-limit :count] :none)
+        (assoc :activation-limit/type :turn)
+        #_(assoc-in [:activation-limit :type] :turn)
+        (assoc :activation-limit/count :none)
+        #_(assoc-in [:activation-limit :count] :none)
         (assoc-in [:timing :relativity] :none)
         (assoc-in [:timing :target-indicator] :the)
-        (assoc-in [:timing :type] :main-phase)
+        (assoc :timing/type :main-phase)
+        #_(assoc-in [:timing :type] :main-phase)
 
 
-        #_((assoc-in [:activation-restriction :state] false)
-           (assoc-in [:activation-restriction :only] false)
-           (assoc-in [:activation-restriction :count] :once)
-           (assoc-in [:activation-restriction :type] :turn)
-           (assoc-in [:activation-restriction :activation] :activate)
-           (assoc-in [:activation-restriction :effect-reference] :this-effect)
-           (assoc-in [:activation-restriction :restriction-level] :this-card)
-           (assoc-in [:once-per :state] :none)
-           (assoc-in [:once-per :count] :once)
-           (assoc-in [:once-per :player] :any)
-           (assoc-in [:once-per :phase] :any)
-           (assoc-in [:once-per :include-player] false)
-           (assoc-in [:once-per :time] :off)))))
+        #_((assoc-in [:activation-restriction :state] false
+            (assoc-in [:activation-restriction :only] false)
+            (assoc-in [:activation-restriction :count] :once)
+            (assoc-in [:activation-restriction :type] :turn)
+            (assoc-in [:activation-restriction :activation] :activate)
+            (assoc-in [:activation-restriction :effect-reference] :this-effect)
+            (assoc-in [:activation-restriction :restriction-level] :this-card)
+            (assoc-in [:once-per :state] :none)
+            (assoc-in [:once-per :count] :once)
+            (assoc-in [:once-per :player] :any)
+            (assoc-in [:once-per :phase] :any)
+            (assoc-in [:once-per :include-player] false)
+            (assoc-in [:once-per :time] :off))))))
 
 (rf/reg-event-db
   :card-name-update
@@ -43,14 +46,24 @@
     (assoc-in state [:trigger :state] active)))
 
 (rf/reg-event-db
-  :activation-limit-type-update
+  :activation-limit/type-update
   (fn [state [_ value]]
-    (assoc-in state [:activation-limit :type] value)))
+    (assoc state :activation-limit/type value)))
+
+#_(rf/reg-event-db
+    :activation-limit-type-update
+    (fn [state [_ value]]
+      (assoc-in state [:activation-limit :type] value)))
 
 (rf/reg-event-db
-  :activation-limit-count-update
+  :activation-limit/count-update
   (fn [state [_ value]]
-    (assoc-in state [:activation-limit :count] value)))
+    (assoc state :activation-limit/count value)))
+
+#_(rf/reg-event-db
+    :activation-limit-count-update
+    (fn [state [_ value]]
+      (assoc-in state [:activation-limit :count] value)))
 
 (rf/reg-event-db
   :timing-relativity-update
@@ -63,9 +76,14 @@
     (assoc-in state [:timing :target-indicator] value)))
 
 (rf/reg-event-db
-  :timing-type-update
+  :timing/type-update
   (fn [state [_ value]]
-    (assoc-in state [:timing :type] value)))
+    (assoc state :timing/type value)))
+
+#_(rf/reg-event-db
+    :timing-type-update
+    (fn [state [_ value]]
+      (assoc-in state [:timing :type] value)))
 
 
 

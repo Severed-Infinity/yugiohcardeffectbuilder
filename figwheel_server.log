@@ -1591,3 +1591,73 @@ notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/c
 Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 2.737 seconds.[0m
 notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.83 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 2.536 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.746 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.593 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.92 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.643 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.869 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.664 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.417 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.595 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.127 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 0.806 seconds.[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 4.748 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 5.778 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 2.704 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 2.478 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 4.293 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[31mFailed to compile build :dev from ["src/"] in 1.086 seconds.[0m
+[36m----  Could not Read  src/yugiohcardeffect/cljs/builder.cljs   line:563 ----[0m
+
+  [1m/Users/davidswift/Documents/Projects/yugiohcardeffectbuilder/src/yugiohcardeffect/cljs/builder.cljs [line 563, col 1] Unexpected EOF while reading item 16 of vector, starting at line 181 and column 3.[0m
+
+[36m----  Reader Error : Please see src/yugiohcardeffect/cljs/builder.cljs  ----[0m
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.43 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.023 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js

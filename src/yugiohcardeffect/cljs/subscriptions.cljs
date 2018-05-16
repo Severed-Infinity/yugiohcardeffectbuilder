@@ -15,14 +15,24 @@
     (:state (:trigger state))))
 
 (rf/reg-sub
-  :activation-limit-type
+  :activation-limit/type
   (fn [state [_]]
-    (:type (:activation-limit state))))
+    (:activation-limit/type state)))
+
+#_(rf/reg-sub
+    :activation-limit-type
+    (fn [state [_]]
+      (:type (:activation-limit state))))
 
 (rf/reg-sub
-  :activation-limit-count
+  :activation-limit/count
   (fn [state [_]]
-    (:count (:activation-limit state))))
+    (:activation-limit/count state)))
+
+#_(rf/reg-sub
+    :activation-limit-count
+    (fn [state [_]]
+      (:count (:activation-limit state))))
 
 (rf/reg-sub
   :timing-relativity
@@ -35,9 +45,9 @@
     (:target-indicator (:timing state))))
 
 (rf/reg-sub
-  :timing-type
+  :timing/type
   (fn [state [_]]
-    (:type (:timing state))))
+    (:timing/type state)))
 
 
 

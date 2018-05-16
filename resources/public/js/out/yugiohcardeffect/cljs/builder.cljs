@@ -17,6 +17,96 @@
 ;;TODO use some kind of marker in selection menus to indicate common values found on real cards
 (def tips {})
 
+(defn counts-view [namespace]
+  (let [view-space (str namespace "/count")]
+    [:select {:name      view-space
+              :on-change #(event % (rf/dispatch [(keyword (str view-space "-update")) (keyword (.. % -target -value))]))}
+     [:option {:name  (str view-space "-none")
+               :value :none}
+      "None"]
+     [:option {:name  (str view-space "-once")
+               :value :once}
+      "Once"]
+     [:option {:name  (str view-space "-twice")
+               :value :twice}
+      "Twice"]
+     [:option {:name  (str view-space "-thrice")
+               :value :thrice}
+      "Thrice"]
+     [:option {:name  (str view-space "-four")
+               :value :four}
+      "Four Times"]
+     [:option {:name  (str view-space "-five")
+               :value :five}
+      "Five Times"]
+     [:option {:name  (str view-space "-six")
+               :value :six}
+      "Six Times"]
+     [:option {:name  (str view-space "-seven")
+               :value :seven}
+      "Seven Times"]
+     [:option {:name  (str view-space "-eight")
+               :value :eight}
+      "Eight Times"]
+     [:option {:name  (str view-space "-nine")
+               :value :nine}
+      "Nine Times"]
+     [:option {:name  (str view-space "-ten")
+               :value :ten}
+      "Ten Times"]]))
+
+(defn phases-actions-view [namespace]
+  (let [view-space (str namespace "/type")]
+    [:select {:name         (str view-space "-options")
+              :defaultValue :turn
+              :on-change    #(event % @(rf/dispatch [(keyword (str view-space "-update")) (keyword (.. % -target -value))]))}
+     ;;FIXME make sure I've all actions, phase, and steps covered. turn, phase, step, action(summons?) in that order
+     [:option {:name  (str view-space "-duel")
+               :value :duel}
+      "duel"]
+     [:option {:name  (str view-space "-turn")
+               :value :turn}
+      "turn"]
+     [:option {:name  (str view-space "-opponents-turn")
+               :value :opponents-turn}
+      "opponent's turn"]
+     ;;Not used on existing cards but here for consistency sake.
+     [:option {:name  (str view-space "-draw-phase")
+               :value :draw-phase}
+      "Draw Phase"]
+     [:option {:name  (str view-space "-standby-phase")
+               :value :standby-phase}
+      "Standby Phase"]
+     [:option {:name  (str view-space "-main-phase")
+               :value :main-phase}
+      "Main Phase"]
+     [:option {:name  (str view-space "-main-phase-1")
+               :value :main-phase-1}
+      "Main Phase 1"]
+     [:option {:name  (str view-space "-main-phase-2")
+               :value :main-phase-2}
+      "Main Phase 2"]
+     [:option {:name  (str view-space "-end-phase")
+               :value :end-phase}
+      "End Phase"]
+     [:option {:name  (str view-space "-battle-phase")
+               :value :battle-phase}
+      "Battle Phase"]
+     [:option {:name  (str view-space "-damage-step")
+               :value :damage-step}
+      "Damage Step"]
+     [:option {:name  (str view-space "-battle")
+               :value :battle}
+      "battle"]
+     [:option {:name  (str view-space "-chain")
+               :value :chain}
+      "chain"]
+     [:option {:name  (str view-space "-damage-calculation")
+               :value :damage-calculation}
+      "damage calculation"]]))
+
+
+
 ;;;;;;;;;;;;; VIEWS ;;;;;;;;;;;;
 
 (defn explanations-view []
@@ -74,94 +164,14 @@
    ;;TODO offer to turn on and off as an option
    [:legend "Activation limiters - Once per… trigger portion, also known as how often."]
    [:p "The activation limiter options get more specific as you go down the list."]
-   [:select {:name      "activation-limit-count"
-             :on-change #(event % (rf/dispatch [:activation-limit-count-update (keyword (.. % -target -value))]))}
-    [:option {:name  "none"
-              :value :none}
-     "None"]
-    [:option {:name  "once"
-              :value :once}
-     "Once"]
-    [:option {:name  "twice"
-              :value :twice}
-     "Twice"]
-    [:option {:name  "thrice"
-              :value :thrice}
-     "Thrice"]
-    [:option {:name  "four"
-              :value :four-times}
-     "Four Times"]
-    [:option {:name  "five"
-              :value :five-times}
-     "Five Times"]
-    [:option {:name  "six"
-              :value :six-times}
-     "Six Times"]
-    [:option {:name  "seven"
-              :value :seven-times}
-     "Seven Times"]
-    [:option {:name  "eight"
-              :value :eight-times}
-     "Eight Times"]
-    [:option {:name  "nine"
-              :value :nine-times}
-     "Nine Times"]
-    [:option {:name  "ten"
-              :value :ten-times}
-     "Ten Times"]]
+   [counts-view "activation-limit"]
 
-   (when (not (= @(rf/subscribe [:activation-limit-count]) :none))
+   (when (not (= @(rf/subscribe [:activation-limit/count]) :none))
      [:span
       [:span " per "]
-      [:select {:name         "activation-limit-options"
-                :defaultValue :turn
-                :on-change    #(event % @(rf/dispatch [:activation-limit-type-update (keyword (.. % -target -value))]))}
-       ;;FIXME make sure I've all actions, phase, and steps covered. turn, phase, step, action(summons?) in that order
-       [:option {:name  "once-per-duel"
-                 :value :duel}
-        "duel"]
-       [:option {:name  "once-per-turn"
-                 :value :turn}
-        "turn"]
-       [:option {:name  "once-per-opponents-turn"
-                 :value :opponents-turn}
-        "opponent's turn"]
-       ;;Not used on existing cards but here for consistency sake.
-       [:option {:name  "once-per-draw-phase"
-                 :value :draw-phase}
-        "Draw Phase"]
-       [:option {:name  "once-per-standby-phase"
-                 :value :standby-phase}
-        "Standby Phase"]
-       [:option {:name  "once-per-main-phase"
-                 :value :main-phase}
-        "Main Phase"]
-       [:option {:name  "once-per-main-phase-1"
-                 :value :main-phase-1}
-        "Main Phase 1"]
-       [:option {:name  "once-per-main-phase-2"
-                 :value :main-phase-2}
-        "Main Phase 2"]
-       [:option {:name  "once-per-end-phase"
-                 :value :end-phase}
-        "End Phase"]
-       [:option {:name  "once-per-battle-phase"
-                 :value :battle-phase}
-        "Battle Phase"]
-       [:option {:name  "once-per-damage-step"
-                 :value :damage-step}
-        "Damage Step"]
-       [:option {:name  "once-per-battle"
-                 :value :battle}
-        "battle"]
-       [:option {:name  "once-per-chain"
-                 :value :chain}
-        "chain"]
-       [:option {:name  "once-per-damage-calculation"
-                 :value :damage-calculation}
-        "damage calculations"]]])
+      [phases-actions-view "activation-limit"]])
 
-   (when (not (= @(rf/subscribe [:activation-limit-count]) :none))
+   (when (not (= @(rf/subscribe [:activation-limit/count]) :none))
      ;;TODO pull from a map of tips
      [:p "needs to be updated dynamically, with tips?"])])
 
@@ -231,40 +241,7 @@
                  :value :a}
         "a"]]
 
-      ;;TODO Attempt to reduce repetition by moving common views into their own var
-      [:select {:name      "state-action-options"
-                ;;todo on-change event and subscription
-                :on-change #()}
-       [:option {:name  "draw-phase"
-                 :value :draw-phase}
-        "Draw Phase"]
-       [:option {:name  "standby-phase"
-                 :value :standby-phase}
-        "Standby Phase"]
-       [:option {:name  "main-phase"
-                 :value :main-phase}
-        "Main Phase"]
-       [:option {:name  "main-phase-1"
-                 :value :main-phase-1}
-        "Main Phase 1"]
-       [:option {:name  "main-phase-2"
-                 :value :main-phase-2}
-        "Main Phase 2"]
-       [:option {:name  "battle-phase"
-                 :value :battle-phase}
-        "Battle Phase"]
-       [:option {:name  "damage-calculation"
-                 :value :damage-calculation}
-        "damage calculation"]
-       [:option {:name  "damage-step"
-                 :value :damage-step}
-        "Damage Step"]
-       [:option {:name  "end-phase"
-                 :value :end-phase}
-        "End Phase"]
-       [:option {:name  "turn"
-                 :value :turn}
-        "turn"]]])])
+      [phases-actions-view "timing"]])])
 
 (defn trigger-conditions
   "Builder for the rigger conditions portion of the view"
