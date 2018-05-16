@@ -9,10 +9,13 @@
     (-> state
         (assoc-in [:card-name] "")
         (assoc-in [:trigger :state] false)
+        (assoc :trigger/quick-effect false)
+        (assoc :activation-limit/state false)
         (assoc :activation-limit/type :turn)
         #_(assoc-in [:activation-limit :type] :turn)
         (assoc :activation-limit/count :none)
         #_(assoc-in [:activation-limit :count] :none)
+        (assoc :timing/state false)
         (assoc-in [:timing :relativity] :none)
         (assoc-in [:timing :target-indicator] :the)
         (assoc :timing/type :main-phase)
@@ -46,6 +49,16 @@
     (assoc-in state [:trigger :state] active)))
 
 (rf/reg-event-db
+  :trigger/quick-effect-update
+  (fn [state [_ value]]
+    (assoc state :trigger/quick-effect value)))
+
+(rf/reg-event-db
+  :activation-limit/state-update
+  (fn [state [_ value]]
+    (assoc state :activation-limit/state value)))
+
+(rf/reg-event-db
   :activation-limit/type-update
   (fn [state [_ value]]
     (assoc state :activation-limit/type value)))
@@ -64,6 +77,11 @@
     :activation-limit-count-update
     (fn [state [_ value]]
       (assoc-in state [:activation-limit :count] value)))
+
+(rf/reg-event-db
+  :timing/state-update
+  (fn [state [_ value]]
+    (assoc state :timing/state value)))
 
 (rf/reg-event-db
   :timing-relativity-update

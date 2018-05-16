@@ -15,6 +15,11 @@
     (:state (:trigger state))))
 
 (rf/reg-sub
+  :trigger/quick-effect
+  (fn [state [_]]
+    (:trigger/quick-effect state)))
+
+(rf/reg-sub
   :activation-limit/type
   (fn [state [_]]
     (:activation-limit/type state)))
@@ -25,6 +30,11 @@
       (:type (:activation-limit state))))
 
 (rf/reg-sub
+  :activation-limit/state
+  (fn [state [_]]
+    (:activation-limit/state state)))
+
+(rf/reg-sub
   :activation-limit/count
   (fn [state [_]]
     (:activation-limit/count state)))
@@ -33,6 +43,11 @@
     :activation-limit-count
     (fn [state [_]]
       (:count (:activation-limit state))))
+
+(rf/reg-sub
+  :timing/state
+  (fn [state [_]]
+    (:timing/state state)))
 
 (rf/reg-sub
   :timing-relativity

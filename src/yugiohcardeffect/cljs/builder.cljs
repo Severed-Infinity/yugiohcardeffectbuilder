@@ -55,6 +55,7 @@
                :value :ten}
       "Ten Times"]]))
 
+;;FIXME call these periods
 (defn phases-actions-view [namespace]
   (let [view-space (str namespace "/type")]
     [:select {:name         (str view-space "-options")
@@ -104,7 +105,6 @@
      [:option {:name  (str view-space "-damage-calculation")
                :value :damage-calculation}
       "damage calculation"]]))
-
 
 
 ;;;;;;;;;;;;; VIEWS ;;;;;;;;;;;;
@@ -160,94 +160,116 @@
 (defn activation-limits
   "builder for the once per… portion of the view"
   []
-  [:fieldset
-   ;;TODO offer to turn on and off as an option
-   [:legend "Activation limiters - Once per… trigger portion, also known as how often."]
-   [:p "The activation limiter options get more specific as you go down the list."]
-   [counts-view "activation-limit"]
+  [:div
+   [:span
+    "Activation limits? "
+    [:input {:type      "checkbox"
+             :name      "enable-activation-limit"
+             :checked   @(rf/subscribe [:activation-limit/state])
+             :on-change #(event % (rf/dispatch [:activation-limit/state-update (.. % -target -checked)]))}]]
+   (when (true? @(rf/subscribe [:activation-limit/state]))
+     [:fieldset
+      [:legend "Activation limiters - Once per… trigger portion, also known as how often."]
+      [:p "The activation limiter options get more specific as you go down the list."]
+      [counts-view "activation-limit"]
 
-   (when (not (= @(rf/subscribe [:activation-limit/count]) :none))
-     [:span
-      [:span " per "]
-      [phases-actions-view "activation-limit"]])
+      (when (not (= @(rf/subscribe [:activation-limit/count]) :none))
+        [:span
+         [:span " per "]
+         [phases-actions-view "activation-limit"]])
 
-   (when (not (= @(rf/subscribe [:activation-limit/count]) :none))
-     ;;TODO pull from a map of tips
-     [:p "needs to be updated dynamically, with tips?"])])
+      (when (not (= @(rf/subscribe [:activation-limit/count]) :none))
+        ;;TODO pull from a map of tips
+        [:p "needs to be updated dynamically, with tips?"])])])
 
 (defn timing-limits
   "builder for the timing (e.g. during the…) portion of the view"
   []
-  [:fieldset
-   [:legend "Timing limiters - During… trigger portion, also known as when"]
-   [:select {:name      "timing-relativity-options"
-             :on-change #(event % @(rf/dispatch [:timing-relativity-update (keyword (.. % -target -value))]))}
-    [:option {:name  "none"
-              :value :none}
-     "None"]
-    [:option {:name  "during"
-              :value :during}
-     "During"]
-    [:option {:name  "before"
-              :value :before}
-     "Before"]
-    [:option {:name  "after"
-              :value :after}
-     "After"]
-    [:option {:name  "at-the-start-of"
-              :value :at-the-start-of}
-     "At the start of"]
-    [:option {:name  "at-the-end-of"
-              :value :at-the-end-of}
-     "At the end of"]]
-
-   (when (not (= @(rf/subscribe [:timing-relativity]) :none))
-     [:span
-      ;;TODO should be changed to target-indicator instead of instant target
-      [:select {:name      "instant-target-options"
-                :defaultValue :the
-                ;;todo on-change event and subscription
-                :on-change #()}
+  [:div
+   [:span
+    "Timing limits? "
+    [:input {:type      "checkbox"
+             :name      "enable-timing-limit"
+             :checked   @(rf/subscribe [:timing/state])
+             :on-change #(event % (rf/dispatch [:timing/state-update (.. % -target -checked)]))}]]
+   (when (true? @(rf/subscribe [:timing/state]))
+     [:fieldset
+      [:legend "Timing limiters - During… trigger portion, also known as when"]
+      [:select {:name      "timing-relativity-options"
+                :on-change #(event % @(rf/dispatch [:timing-relativity-update (keyword (.. % -target -value))]))}
        [:option {:name  "none"
                  :value :none}
-        "none"]
-       [:option {:name  "the"
-                 :value :the}
-        "the"]
-       ;;never seen before
-       ;;FIXME the following two don't belong here but are here for reference 
-       [:option {:name  "the-next"
-                 :value :the-next}
-        "the next"]
-       [:option {:name  "the-same"
-                 :value :the-same}
-        "the same"]
-       [:option {:name  "that"
-                 :value :that}
-        "that"]
-       [:option {:name  "this"
-                 :value :this}
-        "this"]
-       [:option {:name  "each"
-                 :value :each}
-        "each"]
-       [:option {:name  "either"
-                 :value :either}
-        "either"]
-       [:option {:name  "your"
-                 :value :your}
-        "your"]
-       [:option {:name  "a"
-                 :value :a}
-        "a"]]
+        "None"]
+       [:option {:name  "during"
+                 :value :during}
+        "During"]
+       [:option {:name  "before"
+                 :value :before}
+        "Before"]
+       [:option {:name  "after"
+                 :value :after}
+        "After"]
+       [:option {:name  "at-the-start-of"
+                 :value :at-the-start-of}
+        "At the start of"]
+       [:option {:name  "at-the-end-of"
+                 :value :at-the-end-of}
+        "At the end of"]]
 
-      [phases-actions-view "timing"]])])
+      (when (not (= @(rf/subscribe [:timing-relativity]) :none))
+        [:div
+         [:span
+          ;;TODO should be changed to target-indicator instead of instant target
+          [:select {:name         "instant-target-options"
+                    :defaultValue :the
+                    ;;todo on-change event and subscription
+                    :on-change    #()}
+           [:option {:name  "none"
+                     :value :none}
+            "none"]
+           [:option {:name  "the"
+                     :value :the}
+            "the"]
+           ;;never seen before
+           ;;FIXME the following two don't belong here but are here for reference
+           [:option {:name  "the-next"
+                     :value :the-next}
+            "the next"]
+           [:option {:name  "the-same"
+                     :value :the-same}
+            "the same"]
+           [:option {:name  "that"
+                     :value :that}
+            "that"]
+           [:option {:name  "this"
+                     :value :this}
+            "this"]
+           [:option {:name  "each"
+                     :value :each}
+            "each"]
+           [:option {:name  "either"
+                     :value :either}
+            "either"]
+           [:option {:name  "your"
+                     :value :your}
+            "your"]
+           [:option {:name  "a"
+                     :value :a}
+            "a"]]
+
+          [phases-actions-view "timing"]]
+
+         [:span
+          "Custom timing effect text "
+          [:input {:type "textbox"
+                   :name "custom-timing-text"}]]])])])
 
 (defn trigger-conditions
   "Builder for the rigger conditions portion of the view"
   []
   [:fieldset
-   [:legend "Trigger conditions"]])
+   [:legend "Trigger conditions"]
+   [:p "todo"]])
 
 (defn trigger
   "View for all trigger components"
@@ -258,254 +280,271 @@
              :name      "enable-trigger"
              :checked   @(rf/subscribe [:trigger-state])
              :on-change #(event % (rf/dispatch [:trigger-state-update (.. % -target -checked)]))}]]
-   (when (true? @(rf/subscribe [:trigger-state]))
+
+   (if (true? @(rf/subscribe [:trigger-state]))
      ;;TODO make sure that sub states/actions cannot be long to a different state/action branch
      [:div
       [activation-limits]
       [timing-limits]
-      [trigger-conditions]])])
+      [trigger-conditions]
+      [:span
+       "Quick effect? "
+       [:input {:type      "checkbox"
+                :name      "enable-quick-effect"
+                :checked   @(rf/subscribe [:trigger/quick-effect])
+                :on-change #(event % (rf/dispatch [:trigger/quick-effect-update (.. % -target -checked)]))}]]]
+     [:p "Triggers cover the states required for an effect to activate and how often they can be activated;
+          Examples being an effect is limited to 'Once Per Turn' or
+          can only be activated 'If a card is sent to the GY'"])])
+
+(defn ignition
+  []
+  [:fieldset
+   [:legend "Effect ignition - enable? "]
+   [:p "Ignition covers the actions a player must take to activate an effect such as paying LF,
+        discarding cards, etc."]])
 
 ;;TODO change name when done
 ;;TODO help descriptions of what each options do as a text box beside them
-(defn activation-conditions
-  "Provides the options available for creating a once per 'something' effect"
-  []
-  [:fieldset
-   [:legend "Activation Condition "]
-   [:select {:name      "once-per-option"
-             :on-change #(event % (rf/dispatch [:once-per-state-update (keyword (.. % -target -value))]))}
-    [:option {:name  "none"
-              :value :none}
-     "None"]
-    [:option {:name  "once-per"
-              :value :once-per}
-     "Once per "]]
-   ;[:button {:on-click #(event % (rf/dispatch [:once-per-state-update :once-per]))}
-   ;   "change"]]
+#_(defn activation-conditions
+    "Provides the options available for creating a once per 'something' effect"
+    []
+    [:fieldset
+     [:legend "Activation Condition "]
+     [:select {:name      "once-per-option"
+               :on-change #(event % (rf/dispatch [:once-per-state-update (keyword (.. % -target -value))]))}
+      [:option {:name  "none"
+                :value :none}
+       "None"]
+      [:option {:name  "once-per"
+                :value :once-per}
+       "Once per "]]
+     ;[:button {:on-click #(event % (rf/dispatch [:once-per-state-update :once-per]))}
+     ;   "change"]]
 
-   (when (or
-           (= @(rf/subscribe [:once-per-time]) :turn)
-           (= @(rf/subscribe [:once-per-include-player]) true))
-     [:span " Player: "
-      [:select {:name      "who"
-                :on-change #(event % (rf/dispatch [:once-per-player-update (keyword (.. % -target -value))]))}
-       [:option {:name  "any"
-                 :value :any}
-        "any"]
-       [:option {:name  "turn"
-                 :value :your}
-        "your"]
-       [:option {:name  "phase"
-                 :value :opponents}
-        "opponent's"]]])
+     (when (or
+             (= @(rf/subscribe [:once-per-time]) :turn)
+             (= @(rf/subscribe [:once-per-include-player]) true))
+       [:span " Player: "
+        [:select {:name      "who"
+                  :on-change #(event % (rf/dispatch [:once-per-player-update (keyword (.. % -target -value))]))}
+         [:option {:name  "any"
+                   :value :any}
+          "any"]
+         [:option {:name  "turn"
+                   :value :your}
+          "your"]
+         [:option {:name  "phase"
+                   :value :opponents}
+          "opponent's"]]])
 
-   (when (= @(rf/subscribe [:once-per-time]) :phase)
-     [:span " Phase: "
-      [:select {:name      "phase"
-                :on-change #(event % (rf/dispatch [:once-per-phase-update (keyword (.. % -target -value))]))}
-       [:option {:name  "any"
-                 :value :any}
-        "any"]
-       [:option {:name  "draw"
-                 :value :draw}
-        "draw"]
-       [:option {:name  "standby"
-                 :value :standby}
-        "standby"]
-       [:option {:name  "main-phase"
-                 :value :main-phase}
-        "main phase"]
-       [:option {:name  "main-phase-1"
-                 :value :main-phase-1}
-        "main phase 1"]
-       [:option {:name  "main-phase-2"
-                 :value :main-phase-2}
-        "main phase 2"]
-       [:option {:name  "battle-phase"
-                 :value :battle-phase}
-        "battle phase"]
-       [:option {:name  "battle-phase"
-                 :value :battle-phase}
-        "battle phase"]
-       [:option {:name  "end-phase"
-                 :value :end-phase}
-        "end phase"]]])
+     (when (= @(rf/subscribe [:once-per-time]) :phase)
+       [:span " Phase: "
+        [:select {:name      "phase"
+                  :on-change #(event % (rf/dispatch [:once-per-phase-update (keyword (.. % -target -value))]))}
+         [:option {:name  "any"
+                   :value :any}
+          "any"]
+         [:option {:name  "draw"
+                   :value :draw}
+          "draw"]
+         [:option {:name  "standby"
+                   :value :standby}
+          "standby"]
+         [:option {:name  "main-phase"
+                   :value :main-phase}
+          "main phase"]
+         [:option {:name  "main-phase-1"
+                   :value :main-phase-1}
+          "main phase 1"]
+         [:option {:name  "main-phase-2"
+                   :value :main-phase-2}
+          "main phase 2"]
+         [:option {:name  "battle-phase"
+                   :value :battle-phase}
+          "battle phase"]
+         [:option {:name  "battle-phase"
+                   :value :battle-phase}
+          "battle phase"]
+         [:option {:name  "end-phase"
+                   :value :end-phase}
+          "end phase"]]])
 
-   (when (= @(rf/subscribe [:once-per-state]) :once-per)
-     [:span " Time: "
-      [:select {:name      "time"
-                :on-change #(event % (rf/dispatch [:once-per-time-update (keyword (.. % -target -value))]))}
-       [:option {:name  "turn"
-                 :value :turn}
-        "turn"]
-       [:option {:name  "phase"
-                 :value :phase}
-        "phase"]]
-      (when (= @(rf/subscribe [:once-per-time]) :phase)
-        [:span " Include Player? "
-         [:input {:type      "checkbox"
-                  :name      "include-player"
-                  :checked   @(rf/subscribe [:once-per-include-player])
-                  :on-change #(event % (rf/dispatch [:once-per-include-player-update (.. % -target -checked)]))}]])])])
+     (when (= @(rf/subscribe [:once-per-state]) :once-per)
+       [:span " Time: "
+        [:select {:name      "time"
+                  :on-change #(event % (rf/dispatch [:once-per-time-update (keyword (.. % -target -value))]))}
+         [:option {:name  "turn"
+                   :value :turn}
+          "turn"]
+         [:option {:name  "phase"
+                   :value :phase}
+          "phase"]]
+        (when (= @(rf/subscribe [:once-per-time]) :phase)
+          [:span " Include Player? "
+           [:input {:type      "checkbox"
+                    :name      "include-player"
+                    :checked   @(rf/subscribe [:once-per-include-player])
+                    :on-change #(event % (rf/dispatch [:once-per-include-player-update (.. % -target -checked)]))}]])])])
 
-(defn view-activation-condition-effect
-  "Returns the textual version of the effect as it is being built"
-  []
-  (when (= @(rf/subscribe [:once-per-state]) :once-per)
-    [:p "Once"
-     ;;FIXME are these triggers?
-     (case @(rf/subscribe [:once-per-include-player])
-       true (case @(rf/subscribe [:once-per-player])
-              :any " per "
-              :your " per turn, during your "
-              :opponents " per turn, during your opponent's ")
-       false " per ")
-     (case @(rf/subscribe [:once-per-time])
-       :turn "turn"
-       :phase (str (name
-                     (case @(rf/subscribe [:once-per-phase])
-                       :any "phase"
-                       :draw "draw phase"
-                       :standby "standby phase"
-                       :main-phase "main phase"
-                       :main-phase-1 "main phase 1"
-                       :main-phase-2 "main phase 2"
-                       :battle-phase "battle phase"
-                       :end-phase "end phase"))))
-     ;;TODO triggers go here
-     ": "
-     ;;TODO ignitions go here
-     "; "
-     ;;TODO effect goes here
-     ". "]))
+#_(defn view-activation-condition-effect
+    "Returns the textual version of the effect as it is being built"
+    []
+    (when (= @(rf/subscribe [:once-per-state]) :once-per)
+      [:p "Once"
+       ;;FIXME are these triggers?
+       (case @(rf/subscribe [:once-per-include-player])
+         true (case @(rf/subscribe [:once-per-player])
+                :any " per "
+                :your " per turn, during your "
+                :opponents " per turn, during your opponent's ")
+         false " per ")
+       (case @(rf/subscribe [:once-per-time])
+         :turn "turn"
+         :phase (str (name
+                       (case @(rf/subscribe [:once-per-phase])
+                         :any "phase"
+                         :draw "draw phase"
+                         :standby "standby phase"
+                         :main-phase "main phase"
+                         :main-phase-1 "main phase 1"
+                         :main-phase-2 "main phase 2"
+                         :battle-phase "battle phase"
+                         :end-phase "end phase"))))
+       ;;TODO triggers go here
+       ": "
+       ;;TODO ignitions go here
+       "; "
+       ;;TODO effect goes here
+       ". "]))
 
-(defn limit-activation
-  "Provides the options available for creating a once per 'something' effect"
-  []
-  [:div
-   [:span "Limit Activation? "
-    [:input {:type      :checkbox
-             :name      "activation-restriction"
-             :checked   @(rf/subscribe [:activation-restriction-state])
-             :on-change #(event % (rf/dispatch [:activation-restriction-state-update (.. % -target -checked)]))}]]
-   (when (= @(rf/subscribe [:activation-restriction-state]) true)
-     [:fieldset
-      [:legend "Limit Activation"]
-      ;[:span "Only "]
-      ;[:input {:type      :checkbox
-      ;         :name      "only"
-      ;         :checked   @(rf/subscribe [:activation-restriction-only])
-      ;         :on-change #(event % (rf/dispatch [:activation-restriction-only-update (.. % -target -checked)]))}]]
-
-
-      [:select {:name      "activation-count"
-                :on-change #(event % (rf/dispatch [:activation-restriction-count-update (keyword (.. % -target -value))]))}
-       [:option {:name  "once"
-                 :value :once}
-        "Once"]
-       [:option {:name  "twice"
-                 :value :twice}
-        "Twice"]
-       [:option {:name  "thrice"
-                 :value :thrice}
-        "Thrice"]
-       [:option {:name  "four"
-                 :value :four-times}
-        "Four Times"]
-       [:option {:name  "five"
-                 :value :five-times}
-        "Five Times"]
-       [:option {:name  "six"
-                 :value :six-times}
-        "Six Times"]
-       [:option {:name  "seven"
-                 :value :seven-times}
-        "Seven Times"]
-       [:option {:name  "eight"
-                 :value :eight-times}
-        "Eight Times"]
-       [:option {:name  "nine"
-                 :value :nine-times}
-        "Nine Times"]
-       [:option {:name  "ten"
-                 :value :ten-times}
-        "Ten Times"]]
+#_(defn limit-activation
+    "Provides the options available for creating a once per 'something' effect"
+    []
+    [:div
+     [:span "Limit Activation? "
+      [:input {:type      :checkbox
+               :name      "activation-restriction"
+               :checked   @(rf/subscribe [:activation-restriction-state])
+               :on-change #(event % (rf/dispatch [:activation-restriction-state-update (.. % -target -checked)]))}]]
+     (when (= @(rf/subscribe [:activation-restriction-state]) true)
+       [:fieldset
+        [:legend "Limit Activation"]
+        ;[:span "Only "]
+        ;[:input {:type      :checkbox
+        ;         :name      "only"
+        ;         :checked   @(rf/subscribe [:activation-restriction-only])
+        ;         :on-change #(event % (rf/dispatch [:activation-restriction-only-update (.. % -target -checked)]))}]]
 
 
-      [:span " per "
-       [:select {:name      "type"
-                 :on-change #(event % (rf/dispatch [:activation-restriction-type-update (keyword (.. % -target -value))]))}
-        [:option {:name  "turn"
-                  :value :turn}
-         "turn"]
-        [:option {:name  "turn"
-                  :value :duel}
-         "duel"]]]
+        [:select {:name      "activation-count"
+                  :on-change #(event % (rf/dispatch [:activation-restriction-count-update (keyword (.. % -target -value))]))}
+         [:option {:name  "once"
+                   :value :once}
+          "Once"]
+         [:option {:name  "twice"
+                   :value :twice}
+          "Twice"]
+         [:option {:name  "thrice"
+                   :value :thrice}
+          "Thrice"]
+         [:option {:name  "four"
+                   :value :four-times}
+          "Four Times"]
+         [:option {:name  "five"
+                   :value :five-times}
+          "Five Times"]
+         [:option {:name  "six"
+                   :value :six-times}
+          "Six Times"]
+         [:option {:name  "seven"
+                   :value :seven-times}
+          "Seven Times"]
+         [:option {:name  "eight"
+                   :value :eight-times}
+          "Eight Times"]
+         [:option {:name  "nine"
+                   :value :nine-times}
+          "Nine Times"]
+         [:option {:name  "ten"
+                   :value :ten-times}
+          "Ten Times"]]
 
 
-      (when (= @(rf/subscribe [:activation-restriction-only]) true))
-      [:span " you can "
-       [:select {:name      "activation"
-                 :on-change #(event % (rf/dispatch [:activation-restriction-activation-update (keyword (.. % -target -value))]))}
-        [:option {:name  "activate"
-                  :value :activate}
-         "activate"]
-        [:option {:name  "use"
-                  :value :use}
-         "use"]]
-       " "
-
-       (when (not (= @(rf/subscribe [:activation-restriction-restriction-level]) :1-of-this-card))
-         [:select {:name      "effect-reference"
-                   :on-change #(event % (rf/dispatch [:activation-restriction-effect-reference-update (keyword (.. % -target -value))]))}
-          [:option {:name  "this-effect"
-                    :value :this-effect}
-           "this effect"]
-          [:option {:name  "the-effect"
-                    :value :the-effect}
-           "the effect"]
-          ;;TODO this part is more complicated will most likely need multiple run overs
-          [:option {:name  "one-of"
-                    :value :1-of-these-effects}
-           "1 of these effects"]])
+        [:span " per "
+         [:select {:name      "type"
+                   :on-change #(event % (rf/dispatch [:activation-restriction-type-update (keyword (.. % -target -value))]))}
+          [:option {:name  "turn"
+                    :value :turn}
+           "turn"]
+          [:option {:name  "turn"
+                    :value :duel}
+           "duel"]]]
 
 
-       [:select {:name      "restriction-level"
-                 :on-change #(event % (rf/dispatch [:activation-restriction-restriction-level-update (keyword (.. % -target -value))]))}
-        [:option {:name  "this-card"
-                  :value :this-card}
-         "of \"" @(rf/subscribe [:card-name]) "\""]
-        [:option {:name  "1-of-this-card"
-                  :value :1-of-this-card}
-         "1 \"" @(rf/subscribe [:card-name]) "\""]
-        [:option {:name  "for-all-cards"
-                  :value :for-all-cards}
-         "for all cards"]]]])])
+        (when (= @(rf/subscribe [:activation-restriction-only]) true))
+        [:span " you can "
+         [:select {:name      "activation"
+                   :on-change #(event % (rf/dispatch [:activation-restriction-activation-update (keyword (.. % -target -value))]))}
+          [:option {:name  "activate"
+                    :value :activate}
+           "activate"]
+          [:option {:name  "use"
+                    :value :use}
+           "use"]]
+         " "
 
-(defn view-effect
-  "Returns the textual version of the effect as it is being built"
-  []
-  [:p
-   (when (= @(rf/subscribe [:activation-restriction-state]) true)
-     (let [card-name @(rf/subscribe [:card-name])
-           count (name @(rf/subscribe [:activation-restriction-count]))
-           only? @(rf/subscribe [:activation-restriction-only])
-           activation (name @(rf/subscribe [:activation-restriction-activation]))
-           effect-reference (name @(rf/subscribe [:activation-restriction-effect-reference]))
-           restriction-level @(rf/subscribe [:activation-restriction-restriction-level])]
-       (case @(rf/subscribe [:activation-restriction-type])
-         :turn (str "You can only "
-                    activation " "
-                    (when (not (= restriction-level :1-of-this-card))
-                      (str effect-reference " "))
-                    (case restriction-level
-                      :this-card (str "of \"" card-name "\"")
-                      :1-of-this-card (str 1 " \"" card-name "\"")
-                      :for-all-cards "")
-                    " "
-                    count " per turn.")
-         ;(str (string/capitalize count) " per turn"))
-         :duel (str "You can only " activation " " effect-reference " " restriction-level " " count " per duel."))))])
+         (when (not (= @(rf/subscribe [:activation-restriction-restriction-level]) :1-of-this-card))
+           [:select {:name      "effect-reference"
+                     :on-change #(event % (rf/dispatch [:activation-restriction-effect-reference-update (keyword (.. % -target -value))]))}
+            [:option {:name  "this-effect"
+                      :value :this-effect}
+             "this effect"]
+            [:option {:name  "the-effect"
+                      :value :the-effect}
+             "the effect"]
+            ;;TODO this part is more complicated will most likely need multiple run overs
+            [:option {:name  "one-of"
+                      :value :1-of-these-effects}
+             "1 of these effects"]])
+
+
+         [:select {:name      "restriction-level"
+                   :on-change #(event % (rf/dispatch [:activation-restriction-restriction-level-update (keyword (.. % -target -value))]))}
+          [:option {:name  "this-card"
+                    :value :this-card}
+           "of \"" @(rf/subscribe [:card-name]) "\""]
+          [:option {:name  "1-of-this-card"
+                    :value :1-of-this-card}
+           "1 \"" @(rf/subscribe [:card-name]) "\""]
+          [:option {:name  "for-all-cards"
+                    :value :for-all-cards}
+           "for all cards"]]]])])
+
+#_(defn view-effect
+    "Returns the textual version of the effect as it is being built"
+    []
+    [:p
+     (when (= @(rf/subscribe [:activation-restriction-state]) true)
+       (let [card-name @(rf/subscribe [:card-name])
+             count (name @(rf/subscribe [:activation-restriction-count]))
+             only? @(rf/subscribe [:activation-restriction-only])
+             activation (name @(rf/subscribe [:activation-restriction-activation]))
+             effect-reference (name @(rf/subscribe [:activation-restriction-effect-reference]))
+             restriction-level @(rf/subscribe [:activation-restriction-restriction-level])]
+         (case @(rf/subscribe [:activation-restriction-type])
+           :turn (str "You can only "
+                      activation " "
+                      (when (not (= restriction-level :1-of-this-card))
+                        (str effect-reference " "))
+                      (case restriction-level
+                        :this-card (str "of \"" card-name "\"")
+                        :1-of-this-card (str 1 " \"" card-name "\"")
+                        :for-all-cards "")
+                      " "
+                      count " per turn.")
+           ;(str (string/capitalize count) " per turn"))
+           :duel (str "You can only " activation " " effect-reference " " restriction-level " " count " per duel."))))])
 
 (defn app-view []
   [:div
@@ -518,6 +557,7 @@
              :on-change #(event % (rf/dispatch [:card-name-update (.. % -target -value)]))}]
 
     [trigger]
+    [ignition]
     #_(activation-conditions)
     #_(view-activation-condition-effect)
     #_(limit-activation)
