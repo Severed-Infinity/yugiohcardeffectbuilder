@@ -2,23 +2,345 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3978b8ec-fce9-4545-adff-c8c16254b9bf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__buddy_buddy_core_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__buddy_buddy_sign_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__cheshire_5_6_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_annotations_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_databind_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_github_fge_json_schema_core_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_github_fge_json_schema_validator_2_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_googlecode_libphonenumber_libphonenumber_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_io_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__metosin_ring_http_response_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__metosin_ring_swagger_0_22_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__metosin_schema_tools_0_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__metosin_scjsv_0_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__net_sf_jopt_simple_jopt_simple_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_bouncycastle_bcpkix_jdk15on_1_55.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_bouncycastle_bcprov_jdk15on_1_55.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_webjars_webjars_locator_0_32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_webjars_webjars_locator_core_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__prismatic_plumbing_0_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_aleph_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_async_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_bidi_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_core_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_json_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_json_html_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_jwt_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_multipart_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_oauth2_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_swagger_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_transit_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__yada_webjars_1_2_11.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nrepl-port" beforeDir="false" afterPath="$PROJECT_DIR$/.nrepl-port" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/figwheel_server.log" beforeDir="false" afterPath="$PROJECT_DIR$/figwheel_server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.cljs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.cljs.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.cljs.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.cljs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.cljs.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.cljs.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.cljs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.cljs.cache.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.cljs.cache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/.figwheel-compile-stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/buffers.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/buffers.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/buffers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/buffers.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/channels.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/channels.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/channels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/channels.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/dispatch.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/dispatch.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/dispatch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/dispatch.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/ioc_helpers.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/ioc_helpers.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/ioc_helpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/ioc_helpers.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/protocols.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/protocols.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/protocols.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/protocols.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/timers.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/timers.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/timers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/core/async/impl/timers.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/pprint.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/pprint.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/pprint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/pprint.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/reader.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/reader.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/reader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/reader.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/repl.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/repl.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/repl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/repl.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/spec/alpha.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/spec/alpha.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/spec/alpha.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/spec/alpha.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/spec/gen/alpha.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/spec/gen/alpha.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/spec/gen/alpha.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/spec/gen/alpha.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/edn.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/edn.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/edn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/edn.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/commons.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/commons.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/commons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/commons.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/errors.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/errors.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/errors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/errors.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/inspect.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/inspect.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/inspect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/inspect.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/utils.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/utils.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/impl/utils.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/reader_types.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/reader_types.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/reader_types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs/tools/reader/reader_types.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljs_deps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljsc_opts.edn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljsjs/create-react-class/development/create-react-class.inc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljsjs/react-dom/development/react-dom.inc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/cljsjs/react/development/react.inc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/data.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/data.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/data.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/math/combinatorics.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/math/combinatorics.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/math/combinatorics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/math/combinatorics.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/set.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/set.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/set.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/string.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/string.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/string.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/string.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/walk.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/walk.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/walk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/clojure/walk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/file_reloading.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/file_reloading.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/file_reloading.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/file_reloading.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/heads_up.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/heads_up.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/heads_up.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/heads_up.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/socket.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/socket.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/socket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/socket.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/utils.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/utils.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/client/utils.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/connect.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/connect.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/connect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/figwheel/connect.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/array/array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/asserts/asserts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/async/freelist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/async/nexttick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/async/run.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/async/workqueue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/debug/entrypointregistry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/debug/error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/deps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/dom/asserts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/dom/browserfeature.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/dom/dataset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/dom/dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/dom/htmlelement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/dom/nodetype.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/dom/safe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/dom/tagname.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/dom/tags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/fs/url.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/functions/functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/html/legacyconversions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/html/safehtml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/html/safescript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/html/safestyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/html/safestylesheet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/html/safeurl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/html/trustedresourceurl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/html/uncheckedconversions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/i18n/bidi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/iter/iter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/labs/useragent/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/labs/useragent/engine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/labs/useragent/platform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/labs/useragent/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/math/coordinate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/math/integer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/math/long.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/math/math.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/math/size.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/mochikit/async/deferred.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/net/jsloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/object/object.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/promise/promise.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/promise/resolver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/promise/thenable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/reflect/reflect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/string/const.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/string/string.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/string/stringbuffer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/string/typedstring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/structs/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/structs/structs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/uri/uri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/uri/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/useragent/product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/goog/useragent/useragent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/process/env.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/process/env.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/process/env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/process/env.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/cofx.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/cofx.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/cofx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/cofx.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/core.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/core.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/core.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/db.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/db.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/db.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/events.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/events.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/events.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/fx.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/fx.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/fx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/fx.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/interceptor.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/interceptor.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/interceptor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/interceptor.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/interop.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/interop.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/interop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/interop.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/loggers.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/loggers.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/loggers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/loggers.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/registrar.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/registrar.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/registrar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/registrar.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/router.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/router.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/router.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/std_interceptors.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/std_interceptors.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/std_interceptors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/std_interceptors.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/subs.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/subs.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/subs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/subs.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/trace.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/trace.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/trace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/trace.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/utils.cljc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/utils.cljc.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/re_frame/utils.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/core.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/core.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/core.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/debug.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/debug.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/debug.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/dom.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/dom.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/dom.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/batching.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/batching.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/batching.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/batching.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/component.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/component.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/component.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/template.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/template.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/template.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/util.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/util.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/impl/util.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/interop.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/interop.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/interop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/interop.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/ratom.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/ratom.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/ratom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/reagent/ratom.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/builder.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/events.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.cljs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.cljs.cache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs" beforeDir="false" afterPath="$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yugiohcardeffectbuilder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yugiohcardeffectbuilder.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,22 +354,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="builder.cljs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="builder.cljs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="304" column="9" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="9" />
+            <state relative-caret-position="60">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="41" />
               <folding>
                 <element signature="e#379#437#0" />
-                <element signature="e#550#1878#0" />
-                <element signature="e#1828#3551#0" />
-                <element signature="e#584#3270#0" />
-                <element signature="e#9329#9465#0" />
-                <element signature="e#20697#20849#0" />
-                <element signature="e#20851#21070#0" />
-                <element signature="e#21072#21159#0" />
-                <element signature="e#21161#21272#0" />
-                <element signature="e#21274#21430#0" />
               </folding>
             </state>
           </provider>
@@ -56,8 +369,8 @@
       <file leaf-file-name="subscriptions.cljs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="1110">
+              <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -65,17 +378,33 @@
       <file leaf-file-name="events.cljs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+            <state relative-caret-position="1695">
+              <caret line="113" column="34" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
+      <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="797">
+              <caret line="220" column="20" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yugioh-card-effects.edn" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yugioh-card-effects.edn">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="-139902" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card-effects.edn" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/card-effects.edn">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -98,6 +427,7 @@
       <find>file</find>
       <find>close</find>
       <find>opp</find>
+      <find>get</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,12 +452,12 @@
         <option value="$PROJECT_DIR$/src/yugiohcardeffect/cljs/keyword_generator.cljs" />
         <option value="$PROJECT_DIR$/app.html" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj" />
+        <option value="$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs" />
         <option value="$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs" />
         <option value="$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs" />
-        <option value="$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs" />
+        <option value="$PROJECT_DIR$/project.clj" />
+        <option value="$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj" />
       </list>
     </option>
   </component>
@@ -334,6 +664,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -345,19 +677,6 @@
               <item name="yugiohcardeffectbuilder" type="b2602c69:ProjectViewProjectNode" />
               <item name="yugiohcardeffectbuilder" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yugiohcardeffectbuilder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yugiohcardeffectbuilder" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yugiohcardeffectbuilder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yugiohcardeffectbuilder" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yugiohcardeffectbuilder" type="b2602c69:ProjectViewProjectNode" />
@@ -392,21 +711,19 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Clojure" />
-    <property name="cursive.last.file.extension./Users/davidswift/Documents/Projects/yugiohcardeffectbuilder/yugiohcardeffectbuilder/src" value="cljs" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="cursive.last.file.extension./Users/davidswift/Documents/Projects/yugiohcardeffectbuilder/src" value="cljs" />
+    <property name="cursive.last.file.extension./Users/davidswift/Documents/Projects/yugiohcardeffectbuilder/yugiohcardeffectbuilder/src" value="cljs" />
+    <property name="cursive.last.file.extension./Users/davidswift/Documents/Projects/yugiohcardeffectbuilder/yugiohcardeffectbuilder/src/yugiohcardeffectbuilder" value="cljs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="cursive.last.file.extension./Users/davidswift/Documents/Projects/yugiohcardeffectbuilder/yugiohcardeffectbuilder/src/yugiohcardeffectbuilder" value="cljs" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="cursive.last.file.extension./Users/davidswift/Documents/Projects/yugiohcardeffectbuilder/src" value="cljs" />
+    <property name="settings.editor.selected.configurable" value="Clojure.IDE" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -417,7 +734,7 @@
       <recent name="$PROJECT_DIR$/src/cljs/yugiohcardeffect" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1526504209996">{:repl-history {:ide [], :local [{:command &quot;(def reload-routes\n    (do\n      ((:close (resource-routes)))\n      (resource-routes)))&quot;, :offset 87, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;reload-routes&quot;, :offset 13, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;resource-routes&quot;, :offset 15, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;((:close resource-routes))&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def reload-routes\n    (do\n      ((:close resource-routes))\n      resource-routes))&quot;, :offset 83, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (:close resource-routes))&quot;, :offset 34, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println ((:close resource-routes)))&quot;, :offset 36, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start! [] (reset! server (resource-routes)))&quot;, :offset 50, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;start!&quot;, :offset 6, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(-main)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println @server)&quot;, :offset 17, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defonce server2 (agent nil))&quot;, :offset 29, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 (send server2 reset! (resource-routes)))&quot;, :offset 53, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defonce server2 (agent {}))&quot;, :offset 28, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 (send server2 (resource-routes)))&quot;, :offset 46, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 [] (send server2 (resource-routes)))&quot;, :offset 49, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn stop2 [] (send server2 ((:close @server2))))&quot;, :offset 50, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn stop2 [] (send server2 (when (:close @server2) ((:close @server2)))))&quot;, :offset 75, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(restart-agent server2 {})&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;stop2&quot;, :offset 5, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn reload2 []\n  (do \n    (stop2)\n    (start2)))&quot;, :offset 50, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(reload2)&quot;, :offset 9, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn start2 []\n  (send server2\n        #(do\n           (println \&quot;Starting 2...\&quot;)\n           (merge %)) \n        (resource-routes)))&quot;, :offset 132, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(add-watch\n  server2\n  :starting\n  (fn [key server2 old new]\n    (when (nil? new)\n      (do\n        (prn key 'failed (agent-error server2))\n        (restart-agent server2 old)))\n    (when (empty? old)\n      (prn key new))))&quot;, :offset 223, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (:close @server2))&quot;, :offset 27, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println @server2)&quot;, :offset 18, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(agent-error server2)&quot;, :offset 21, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(restart-agent server2 @server2)&quot;, :offset 32, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(stop2)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(start2)&quot;, :offset 8, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def config (read-config \&quot;config.edn\&quot;))&quot;, :offset 39, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;config&quot;, :offset 6, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn resource-routes []\n  (yada/listener\n    [\&quot;/\&quot;\n     [[\&quot;\&quot; (yada/handler (file \&quot;app.html\&quot;))]\n      [\&quot;resources/public/\&quot; (assoc (new-classpath-resource \&quot;public\&quot;) :id :yugioheffectbuilder.resources/static)]]]\n    ;;TODO environmental inputs\n    {:port (Integer. (:port config))}))&quot;, :offset 280, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn -main []\n  (start!))&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(reload!)&quot;, :offset 9, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(permutations [1 2 3])&quot;, :offset 22, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(permutations [\&quot;yugioh\&quot; \&quot;custom\&quot; \&quot;effect\&quot;\n               \&quot;card\&quot; \&quot;monster\&quot; \&quot;magic\&quot;\n               \&quot;spell\&quot; \&quot;trap\&quot; \&quot;pendulum\&quot;\n               \&quot;link\&quot; \&quot;xyz\&quot; \&quot;synchro\&quot;\n               \&quot;fusion\&quot; \&quot;ritual\&quot; \&quot;normal\&quot;\n               \&quot;continuous\&quot; \&quot;counter\&quot; \&quot;quick-play\&quot;\n               \&quot;quick\&quot; \&quot;field\&quot; \&quot;equip\&quot;])&quot;, :offset 294, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(permutations [\&quot;yugioh\&quot; \&quot;custom\&quot; \&quot;effect\&quot;\n               \&quot;card\&quot; \&quot;monster\&quot; \&quot;magic\&quot;\n               \&quot;spell\&quot; \&quot;trap\&quot; ])&quot;, :offset 114, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn permutations [coll]\n  (reduce (conj []) coll))&quot;, :offset 52, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(defn permutations [coll]\n  (reduce #(conj [] %) coll))&quot;, :offset 55, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(defn permutations [coll]\n  (map (conj []) coll))&quot;, :offset 49, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(defn permutations [coll]\n  (map #(conj [] %) coll))&quot;, :offset 52, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(defn permutations [coll]\n  (let [coll-length (count coll)]\n    (loop [size coll-length\n           permutation-list ()]\n      (if (zero? size) \n        permutations\n        (recur (dec size) (conj permutation-list (map #(conj () %) coll)))))))&quot;, :offset 243, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(defn permutations [coll]\n  (let [coll-length (count coll)]\n    (loop [size coll-length\n           permutation-list ()]\n      (if (zero? size) \n        permutation-list\n        (recur (dec size) (conj permutation-list (map #(conj () %) coll)))))))&quot;, :offset 247, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(defn permutations [coll]\n  (let [coll-length (count coll)]\n    (loop [size coll-length\n           permutation-list ()]\n      (if (zero? size) \n        permutation-list\n        (recur (dec size) (conj permutation-list (map #(%) coll)))))))&quot;, :offset 239, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(defn permutations [coll]\n  (let [coll-length (count coll)]\n    (loop [size coll-length\n           permutation-list ()]\n      (if (zero? size) \n        permutation-list\n        (recur (dec size) (conj permutation-list (map #(identity %) coll)))))))&quot;, :offset 248, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(permutations [\&quot;effect\&quot; \&quot;yugioh\&quot; \&quot;card\&quot;])&quot;, :offset 41, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(list-all [\&quot;effect\&quot; \&quot;card\&quot; \&quot;custom\&quot;])&quot;, :offset 37, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(list-all [\&quot;effect\&quot; \&quot;card\&quot; \&quot;custom\&quot; \&quot;yugioh\&quot;])&quot;, :offset 46, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(list-all [\&quot;effect\&quot; \&quot;card\&quot; \&quot;custom\&quot; \&quot;yugioh\&quot; \&quot;monster\&quot; \&quot;spell\&quot; \&quot;trap\&quot;])&quot;, :offset 71, :ns &quot;yugiohcardeffect.cljs.keyword-generator&quot;} {:command &quot;(defn list-all [items]\n  (transduce\n    (comp (map combo/permutations)\n          cat)\n    conj\n    []\n    (rest (sort-by count (combo/subsets items)))))&quot;, :offset 152, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (map #([:meta {:name \&quot;keywords\&quot; :content %}]) (list-all keywords)))&quot;, :offset 102, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [&amp; keywords]\n  (map #([:meta {:name \&quot;keywords\&quot; :content %}]) (list-all keywords)))&quot;, :offset 104, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [&amp; keywords]\n  (map #('[:meta {:name \&quot;keywords\&quot; :content %}]) (list-all keywords)))&quot;, :offset 105, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(list-all \&quot;yugioh\&quot;)&quot;, :offset 19, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(list-all [\&quot;yugioh\&quot; \&quot;custom\&quot;])&quot;, :offset 30, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [&amp; keywords]\n  (list-all keywords))&quot;, :offset 57, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(keywords-list \&quot;yugioh\&quot;)&quot;, :offset 24, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(keywords-list \&quot;yugioh\&quot; \&quot;custom\&quot;)&quot;, :offset 33, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (list-all keywords))&quot;, :offset 55, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (map identity (list-all keywords)))&quot;, :offset 70, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (map str (list-all keywords)))&quot;, :offset 65, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (map (apply str) (list-all keywords)))&quot;, :offset 73, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (map #(apply str %) (list-all keywords)))&quot;, :offset 76, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (map #(string/join , %) (list-all keywords)))&quot;, :offset 80, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (map #(str/join , %) (list-all keywords)))&quot;, :offset 77, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (map #(join , %) (list-all keywords)))&quot;, :offset 73, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(ns yugiohcardeffect.clj.core\n  (:require [yada.yada :as yada]\n            [yada.resources.classpath-resource :refer [new-classpath-resource]]\n            [clojure.java.io :refer [file resource]]\n            [clojure.string :refer [join]]\n            [aero.core :refer [read-config]]\n            [clojure.math.combinatorics :as combo]))&quot;, :offset 336, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (map #(join \&quot;,\&quot; %) (list-all keywords)))&quot;, :offset 75, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(keywords-list [\&quot;yugioh\&quot; \&quot;custom\&quot;])&quot;, :offset 35, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp #(join \&quot;,\&quot; %))\n    map\n    (list-all keywords)))&quot;, :offset 104, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp #(join \&quot;,\&quot; %))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 112, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp (map (partial join \&quot;,\&quot;)))\n    identity\n    (list-all keywords)))&quot;, :offset 120, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp (map (partial join \&quot;,\&quot;)))\n    conj\n    (list-all keywords)))&quot;, :offset 116, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp \n      (map (partial join \&quot;,\&quot;))\n      #([:meta {:name \&quot;keywords\&quot; :content %}]))\n    conj\n    (list-all keywords)))&quot;, :offset 170, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp \n      (map (partial join \&quot;,\&quot;))\n      #('[:meta {:name \&quot;keywords\&quot; :content %}]))\n    conj\n    (list-all keywords)))&quot;, :offset 171, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp \n      (map (partial join \&quot;,\&quot;))\n      #({:content %}))\n    conj\n    (list-all keywords)))&quot;, :offset 145, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp \n      (map (partial join \&quot;,\&quot;))\n      #(%))\n    conj\n    (list-all keywords)))&quot;, :offset 134, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp \n      (map (partial join \&quot;,\&quot;))\n      (vec :meta))\n    conj\n    (list-all keywords)))&quot;, :offset 141, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp \n      (map (partial join \&quot;,\&quot;))\n      (vector :meta))\n    conj\n    (list-all keywords)))&quot;, :offset 144, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp \n      (map (partial join \&quot;,\&quot;))\n      (into [] :meta))\n    conj\n    (list-all keywords)))&quot;, :offset 145, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp \n      (map (partial join \&quot;,\&quot;))\n      (into [] [:meta]))\n    conj\n    (list-all keywords)))&quot;, :offset 147, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n    conj\n    (list-all keywords)))&quot;, :offset 179, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 186, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      #(map (assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %)))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 192, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %)))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 192, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (conj [:meta]))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 213, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (conj [] :meta))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 214, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (conj () :meta))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 214, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (conj () ':meta))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 215, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (conj nil [:meta]))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 217, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (map (conj nil [:meta])))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 223, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (vector :meta ))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 214, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      #(vector (keyword meta) %))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 225, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      #(identity [(keyword meta) %]))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 229, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (map #(identity [:meta %])))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 226, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (map #(identity [:meta %])))\n    conj\n    (list-all keywords)))&quot;, :offset 219, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(keywords-list [\&quot;YuGiOh\&quot; \&quot;custom\&quot;])&quot;, :offset 35, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(start!)&quot;, :offset 8, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(stop!)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1526916020432">{:repl-history {:ide [], :local [{:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      #(map (assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %)))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 192, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %)))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 192, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (conj [:meta]))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 213, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (conj [] :meta))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 214, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (conj () :meta))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 214, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (conj () ':meta))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 215, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (conj nil [:meta]))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 217, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (map (conj nil [:meta])))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 223, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (vector :meta ))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 214, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      #(vector (keyword meta) %))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 225, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      #(identity [(keyword meta) %]))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 229, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (map #(identity [:meta %])))\n    conj\n    []\n    (list-all keywords)))&quot;, :offset 226, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn keywords-list\n  [keywords]\n  (transduce\n    (comp\n      (map (partial join \&quot;,\&quot;))\n      (map #(assoc {:name \&quot;keywords\&quot; :content \&quot;\&quot;} :content %))\n      (map #(identity [:meta %])))\n    conj\n    (list-all keywords)))&quot;, :offset 219, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(keywords-list [\&quot;YuGiOh\&quot; \&quot;custom\&quot;])&quot;, :offset 35, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(let [namespace \&quot;namespace.subspace\&quot;]\n  (keyword (str namespace \&quot;/none\&quot;)))&quot;, :offset 74, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(start!)&quot;, :offset 8, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(stop!)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(:body (client/get \&quot;https://www.ygohub.com/api/all_cards\&quot;))&quot;, :offset 59, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(json/read-str (:body (client/get \&quot;https://www.ygohub.com/api/all_cards\&quot;)))&quot;, :offset 75, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(:cards\n  (json/read-str\n    (:body\n      (client/get \&quot;https://www.ygohub.com/api/all_cards\&quot;))\n    :key-fn keyword))&quot;, :offset 116, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(map #(client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; %)) @cards-list)&quot;, :offset 84, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def card-effects (promise)\n\n (first  @cards-list))&quot;, :offset 51, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(first  @cards-list)&quot;, :offset 20, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(first @cards-list)&quot;, :offset 19, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(map str @cards-list)&quot;, :offset 21, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(map (fn [name] (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name) @cards-list))&quot;, :offset 85, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def card-effects-list (map (fn [name] (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name) @cards-list)))&quot;, :offset 109, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(card-effects-list)&quot;, :offset 19, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;card-effects-list&quot;, :offset 17, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def card-effects-list (apply map (fn [name] (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name) @cards-list)))&quot;, :offset 115, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(apply map (fn [name] (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name) @cards-list))&quot;, :offset 91, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(apply map (fn [name] (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)) @cards-list)&quot;, :offset 91, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (map (fn [name] (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)) @cards-list))&quot;, :offset 95, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (map (fn [name] (client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)) @cards-list)))&quot;, :offset 108, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (pmap (fn [name] (client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name))) @cards-list))&quot;, :offset 109, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(first (pmap (fn [name]\n               (client/get\n                 (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)\n                 {:async? true}\n                 (fn [response] response)\n                 (fn [exception] (.getMessage exception))))\n             @cards-list))&quot;, :offset 284, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (first (pmap (fn [name]\n                        (client/get\n                          (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)\n                          {:async? true}\n                          (fn [response] response)\n                          (fn [exception] (.getMessage exception))))\n                      @cards-list)))&quot;, :offset 348, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list))\n            {:async? true}\n            (fn [response] response)\n            (fn [exception] (.getMessage exception)))&quot;, :offset 200, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list))\n            {:async? true}\n            (fn [response] @response)\n            (fn [exception] (.getMessage exception)))&quot;, :offset 201, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;@(client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list))\n             {:async? true}\n             (fn [response] response)\n             (fn [exception] (.getMessage exception)))&quot;, :offset 204, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (first (pmap @(fn [name]\n                         (client/get\n                           (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)\n                           {:async? true}\n                           (fn [response] response)\n                           (fn [exception] (.getMessage exception))))\n                      @cards-list)))&quot;, :offset 354, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (first @(pmap (fn [name]\n                         (client/get\n                           (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)\n                           {:async? true}\n                           (fn [response] response)\n                           (fn [exception] (.getMessage exception))))\n                       @cards-list)))&quot;, :offset 355, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (first (pmap (fn [name]\n                        @(client/get\n                           (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)\n                           {:async? true}\n                           (fn [response] response)\n                           (fn [exception] (.getMessage exception))))\n                      @cards-list)))&quot;, :offset 353, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println (pmap (fn [name]\n                 @(client/get\n                    (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)\n                    {:async? true}\n                    (fn [response] response)\n                    (fn [exception] (.getMessage exception))))\n               @cards-list))&quot;, :offset 303, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(deliver\n  cards-list\n  (:cards\n    (json/read-str\n      (:body\n        (client/get \&quot;https://www.ygohub.com/api/all_cards\&quot;))\n      :key-fn keyword)))&quot;, :offset 149, :ns &quot;user&quot;} {:command &quot;@(client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list))\n               {:async? true}\n               (fn [response] response)\n               (fn [exception] (.getMessage exception)))&quot;, :offset 210, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;@(client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list))\n               {:async? true}\n               (fn [response] (:body response))\n               (fn [exception] (.getMessage exception)))&quot;, :offset 218, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;@(client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list)))&quot;, :offset 84, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list)))&quot;, :offset 83, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(:body (client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list))))&quot;, :offset 91, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(json/read-str\n    (:body (client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list))))\n               ;{:async? true}\n               ;(fn [response] (:body response))\n               ;(fn [exception] (.getMessage exception))))\n    :key-fn keyword)&quot;, :offset 270, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (dorun (pmap (fn [name]\n                   (json/read-str\n                     (:body\n                       @(client/get\n                          (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                          ;{:async? true}\n                          ;(fn [response] response)\n                          ;(fn [exception] (.getMessage exception))))\n                     :key-fn keyword))\n                 @cards-list)))&quot;, :offset 461, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (dorun (pmap (fn [name]\n                   (json/read-str\n                     (:body\n                       (client/get\n                         (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                          ;{:async? true}\n                          ;(fn [response] response)\n                          ;(fn [exception] (.getMessage exception))))\n                     :key-fn keyword))\n                 @cards-list)))&quot;, :offset 459, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;get-effects&quot;, :offset 11, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (take 5 (pmap (fn [name]\n                    (json/read-str\n                      (:body\n                        (client/get\n                          (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                           ;{:async? true}\n                           ;(fn [response] response)\n                           ;(fn [exception] (.getMessage exception))))\n                      :key-fn keyword))\n                  @cards-list)))&quot;, :offset 469, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(comment\n  (def cards-list (promise))\n\n  (deliver\n    cards-list\n    (:cards\n      (json/read-str\n        (:body\n          (client/get \&quot;https://www.ygohub.com/api/all_cards\&quot;))\n        :key-fn keyword)))\n\n  (def card-effects (promise))\n\n  (def get-effects\n    (take 5 (pmap (fn [name]\n                    (json/read-str\n                      (:body\n                        (client/get\n                          (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                           ;{:async? true}\n                           ;(fn [response] response)\n                           ;(fn [exception] (.getMessage exception))))\n                      :key-fn keyword))\n                  @cards-list)))\n\n  get-effects\n\n  (json/read-str\n    (:body (client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list))))\n               ;{:async? true}\n               ;(fn [response] (:body response))\n               ;(fn [exception] (.getMessage exception))))\n    :key-fn keyword))&quot;, :offset 997, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(get-effects)&quot;, :offset 13, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println get-effects)&quot;, :offset 21, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(do get-effects)&quot;, :offset 16, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (take 1000 (pmap (fn [name]\n                       (json/read-str\n                         (:body\n                           (client/get\n                             (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                              ;{:async? true}\n                              ;(fn [response] response)\n                              ;(fn [exception] (.getMessage exception))))\n                         :key-fn keyword))\n                     @cards-list)))&quot;, :offset 499, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(time (do get-effects))&quot;, :offset 23, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (take 100 (pmap (fn [name]\n                      (json/read-str\n                        (:body\n                          (client/get\n                            (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                             ;{:async? true}\n                             ;(fn [response] response)\n                             ;(fn [exception] (.getMessage exception))))\n                        :key-fn keyword))\n                    @cards-list)))&quot;, :offset 489, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(do (time get-effects))&quot;, :offset 23, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (take 200 (pmap (fn [name]\n                      (json/read-str\n                        (:body\n                          (client/get\n                            (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                             ;{:async? true}\n                             ;(fn [response] response)\n                             ;(fn [exception] (.getMessage exception))))\n                        :key-fn keyword))\n                    @cards-list)))&quot;, :offset 489, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (take 200 (pmap (future \n                      (fn [name]\n                        (json/read-str\n                          (:body\n                            (client/get\n                              (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                               ;{:async? true}\n                               ;(fn [response] response)\n                               ;(fn [exception] (.getMessage exception))))\n                          :key-fn keyword)))\n                    @cards-list)))&quot;, :offset 537, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (take 200 (pmap\n                (fn [name]\n                  (json/read-str\n                    (future\n                      (:body\n                        (client/get\n                          (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name))))\n              ;{:async? true}\n              ;(fn [response] response)\n              ;(fn [exception] (.getMessage exception))))\n                    :key-fn keyword))\n                @cards-list)))&quot;, :offset 471, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (take 200 (pmap\n                (fn [name]\n                  (json/read-str\n                    (:body\n                      @(client/get\n                         (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)\n                         {:async? true}\n                         (fn [response] response)\n                         (fn [exception] (.getMessage exception))))\n                    :key-fn keyword))\n                @cards-list)))&quot;, :offset 466, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (take 200 (pmap\n                (fn [name]\n                  (json/read-str\n                    (:body\n                      (client/get\n                        (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)\n                        {:async? true}\n                        (fn [response] response)\n                        (fn [exception] (.getMessage exception))))\n                    :key-fn keyword))\n                @cards-list)))&quot;, :offset 461, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (take 200 (pmap\n                (fn [name]\n                  (json/read-str\n                    (:body\n                      (client/get\n                        (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                        ;{:async? true}\n                        ;(fn [response] response)\n                        ;(fn [exception] (.getMessage exception))))\n                    :key-fn keyword))\n                @cards-list)))&quot;, :offset 466, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    (dorun\n      (pmap\n        (fn [name]\n          (json/read-str\n            (:body\n              (client/get\n                (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                ;{:async? true}\n                ;(fn [response] response)\n                ;(fn [exception] (.getMessage exception))))\n            :key-fn keyword))\n        @cards-list)))&quot;, :offset 389, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(time get-effects)&quot;, :offset 18, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(count @card-effects)&quot;, :offset 21, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(count @cards-list)&quot;, :offset 19, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def card-effects (promise))&quot;, :offset 28, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    ;(take 5)\n    (dorun\n      (pmap\n        (fn [name]\n          (json/read-str\n            (:body\n              (client/get\n                (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                ;{:async? true}\n                ;(fn [response] response)\n                ;(fn [exception] (.getMessage exception))))\n            :key-fn keyword))\n        @cards-list)))&quot;, :offset 403, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def cards-list (promise))&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(deliver\n    cards-list\n    (:cards\n      (json/read-str\n        (:body\n          (client/get \&quot;https://www.ygohub.com/api/all_cards\&quot;))\n        :key-fn keyword)))&quot;, :offset 161, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(json/read-str\n    (:header (client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list))))\n    ;{:async? true}\n    ;(fn [response] (:body response))\n    ;(fn [exception] (.getMessage exception))))\n    :key-fn keyword)&quot;, :offset 239, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(json/read-str\n    (client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; (first @cards-list)))\n    ;{:async? true}\n    ;(fn [response] (:body response))\n    ;(fn [exception] (.getMessage exception))))\n    :key-fn keyword)&quot;, :offset 229, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(client/get \&quot;https://www.ygohub.com/api/all_cards\&quot;)&quot;, :offset 51, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def get-effects\n    ;(take 5)\n    (doall\n      (pmap\n        (fn [name]\n          (json/read-str\n            (:body\n              (client/get\n                (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; name)))\n                ;{:async? true}\n                ;(fn [response] response)\n                ;(fn [exception] (.getMessage exception))))\n            :key-fn keyword))\n        @cards-list)))&quot;, :offset 403, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(deliver\n    card-effects\n    get-effects)&quot;, :offset 42, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def cards-request\n    ;; Put it in a future so we can check the status from the repl\n    (future\n      (client/with-async-connection-pool {:timeout 5 :threads 20 :insecure? true :default-per-route 20}\n                                         (doseq [card card-list])\n                                         (get-card-effects-async card)\n                                         (swap! req-count inc)\n                                         (Thread/sleep 500))\n      (println \&quot;All Done!\&quot;)))&quot;, :offset 492, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(do card-request)&quot;, :offset 17, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(do cards-request)&quot;, :offset 18, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(realized? @cards-request)&quot;, :offset 26, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(deref cards-request)&quot;, :offset 21, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(+ 1 1)&quot;, :offset 7, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(realized? cards-request)&quot;, :offset 25, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn get-card-list\n    []\n    (-&gt; \&quot;http://www.ygohub.com/api/all_cards\&quot;\n        (client/get {:as        :json\n                     :insecure? true})\n        :body\n        (get :cards)))&quot;, :offset 186, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def card-list (get-card-list))&quot;, :offset 31, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def card-effects (atom ()))&quot;, :offset 28, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def errors (atom ()))&quot;, :offset 22, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(add-watch errors :error-alert (fn [&amp; _] (println \&quot;Error!\&quot;)))&quot;, :offset 61, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(defn get-card-effects-async\n    [nm]\n    (client/get (str \&quot;https://www.ygohub.com/api/card_info?name=\&quot; nm)\n                {:async? true\n                 :as     :json}\n                (fn [response] (swap! card-effects conj (:body response)))\n                (fn [exception] (swap! errors conj (.getMessage exception)))))&quot;, :offset 323, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def req-count (atom 0))&quot;, :offset 24, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(def cards-request\n    ;; Put it in a future so we can check the status from the repl\n    (future\n      (client/with-async-connection-pool\n        {:timeout 5 :threads 20 :insecure? true :default-per-route 20}\n        (doseq [card card-list]\n          (get-card-effects-async card)\n          (swap! req-count inc)\n          (Thread/sleep 500)))\n      (println \&quot;All Done!\&quot;)))&quot;, :offset 374, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(println req-count)&quot;, :offset 19, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(while (&lt; req-count 9000)\n    (when (mod req-count 100)\n      (println req-count)))&quot;, :offset 83, :ns &quot;yugiohcardeffect.clj.core&quot;} {:command &quot;(while (&lt; @req-count 9000)\n    (when (mod @req-count 100)\n      (println @req-count)))&quot;, :offset 86, :ns &quot;yugiohcardeffect.clj.core&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -437,7 +754,7 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="REPL for yugiohcardeffectbuilder" type="ClojureREPL" factoryName="Local" temporary="true">
+    <configuration name="REPL for yugiohcardeffectbuilder" type="ClojureREPL" factoryName="Local" singleton="true" temporary="true">
       <module name="yugiohcardeffectbuilder" />
       <setting name="replType" value="1" />
       <setting name="jvmArgs" value="" />
@@ -507,14 +824,15 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.52869356" side_tool="true" weight="0.32923076" />
-      <window_info anchor="right" id="REPL" order="3" sideWeight="0.5114504" side_tool="true" visible="true" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.490232" weight="0.32958034" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.520757" side_tool="true" weight="0.32923076" />
+      <window_info anchor="right" id="REPL" order="3" sideWeight="0.5122324" side_tool="true" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4896215" weight="0.32923076" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="right" id="Leiningen" order="3" sideWeight="0.48854962" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.47130647" visible="true" weight="0.32923076" />
+      <window_info anchor="right" id="Leiningen" order="3" sideWeight="0.48776758" weight="0.32967034" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.47924298" weight="0.32923076" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25030527" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2747253" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -525,58 +843,17 @@
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32958034" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26220">
-          <caret line="1748" column="10" selection-start-line="1748" selection-start-column="10" selection-end-line="1748" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3000">
-          <caret line="200" column="4" lean-forward="true" selection-start-line="200" selection-start-column="4" selection-end-line="200" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" selection-start-line="61" selection-end-line="77" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -665,13 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/yada/yada/1.2.11/yada-1.2.11.jar!/yada/yada.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/yada/core/1.2.11/core-1.2.11.jar!/yada/resources/file_resource.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-235">
@@ -721,13 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.edn">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/clojure/clojurescript/1.9.946/clojurescript-1.9.946.jar!/cljs/core.cljc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -747,13 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2070">
           <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/clojure/clojure/1.9.0/clojure-1.9.0.jar!/clojure/core.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="81" column="1" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -785,24 +1041,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/js/main.js" />
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -813,43 +1056,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj">
+    <entry file="jar://$USER_HOME$/.m2/repository/yada/json-html/1.2.11/json-html-1.2.11.jar!/yada/json_html.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/yada/yada/1.2.11/yada-1.2.11.jar!/yada/yada.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.nrepl-port">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/clj-http/clj-http/3.9.0/clj-http-3.9.0.jar!/clj_http/client.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-674">
+          <caret line="1161" column="7" selection-start-line="1161" selection-start-column="7" selection-end-line="1161" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.edn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/events.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        <state relative-caret-position="1695">
+          <caret line="113" column="34" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/subscriptions.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="1110">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/cljs/builder.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="304" column="9" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="9" />
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="41" />
           <folding>
             <element signature="e#379#437#0" />
-            <element signature="e#550#1878#0" />
-            <element signature="e#1828#3551#0" />
-            <element signature="e#584#3270#0" />
-            <element signature="e#9329#9465#0" />
-            <element signature="e#20697#20849#0" />
-            <element signature="e#20851#21070#0" />
-            <element signature="e#21072#21159#0" />
-            <element signature="e#21161#21272#0" />
-            <element signature="e#21274#21430#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/jdk/Contents/Home/jre/lib/rt.jar!/java/io/OutputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/card-effects.edn">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/clojure/clojure/1.9.0/clojure-1.9.0.jar!/clojure/java/io.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="85" column="14" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/clojure/clojure/1.9.0/clojure-1.9.0.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="3076" column="6" selection-start-line="3076" selection-start-column="6" selection-end-line="3076" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yugioh-card-effects.edn">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-139902" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-32" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/yugiohcardeffect/clj/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="220" column="20" selection-start-line="220" selection-start-column="20" selection-end-line="220" selection-end-column="20" />
         </state>
       </provider>
     </entry>

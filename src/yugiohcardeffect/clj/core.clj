@@ -3,8 +3,16 @@
             [yada.resources.classpath-resource :refer [new-classpath-resource]]
             [clojure.java.io :refer [file resource]]
             [clojure.string :refer [join]]
+            [clojure.data.json :as json]
+            [cljs.pprint :refer [pprint]]
             [aero.core :refer [read-config]]
-            [clojure.math.combinatorics :as combo]))
+            [clj-http.client :as client]
+            [clojure.java.io :refer [output-stream writer reader]]
+            [clojure.edn :as edn])
+  (:import (java.io OutputStream)))
+
+#_(require '(clojure.java [io :refer [output-stream writer reader]]))
+#_(require '(clojure [edn :as edn]))
 
 (def config (read-config "config.edn"))
 #_config
@@ -42,58 +50,59 @@
     (stop!)
     (start!)))
 
-;;;; AGENT Variant ;;;;;;;
-(defonce server2 (agent {}))
+(comment
+  ;;;; AGENT Variant ;;;;;;;
+  (defonce server2 (agent {}))
 
-(add-watch
-  server2
-  :starting
-  (fn [key server2 old new]
-    (when (empty? old)
-      (if (any? (agent-error server2))
-        (do
-          (prn key 'failed 'with (agent-error server2))
-          (restart-agent server2 old))
-        (prn key new)))))
-
-(add-watch
-  server2
-  :stopping
-  (fn [key server2 old new]
-    (when (not (empty? old))
-      (if (any? (agent-error server2))
-        (prn key 'failed 'with (agent-error server2))
-        (prn key new)))))
-
-(defn start2 []
-  (let [routes (resource-routes)]
-    (send server2 merge routes)
-    (when (any? (agent-error server2))
-      (do
-        ((:close routes))
-        (prn (agent-error server2))
-        (restart-agent server2 @server2)))))
-
-#_(start2)
-
-(defn stop2 []
-  (when (:close @server2)
-    (send server2
+  (add-watch
+    server2
+    :starting
+    (fn [key server2 old new]
+      (when (empty? old)
+        (if (any? (agent-error server2))
           (do
-            (println "Closing 2...")
-            ((:close @server2)) {}))))
-#_(stop2)
+            (prn key 'failed 'with (agent-error server2))
+            (restart-agent server2 old))
+          (prn key new)))))
 
-(defn reload2 []
-  (do
-    (stop2)
-    (start2)))
-#_(reload2)
+  (add-watch
+    server2
+    :stopping
+    (fn [key server2 old new]
+      (when (not (empty? old))
+        (if (any? (agent-error server2))
+          (prn key 'failed 'with (agent-error server2))
+          (prn key new)))))
 
-#_(println (:close @server2))
-#_(agent-error server2)
-#_(restart-agent server2 @server2)
-#_(println @server2)
+  (defn start2 []
+    (let [routes (resource-routes)]
+      (send server2 merge routes)
+      (when (any? (agent-error server2))
+        (do
+          ((:close routes))
+          (prn (agent-error server2))
+          (restart-agent server2 @server2)))))
+
+  #_(start2)
+
+  (defn stop2 []
+    (when (:close @server2)
+      (send server2
+            (do
+              (println "Closing 2...")
+              ((:close @server2)) {}))))
+  #_(stop2)
+
+  (defn reload2 []
+    (do
+      (stop2)
+      (start2)))
+  #_(reload2)
+
+  #_(println (:close @server2))
+  #_(agent-error server2)
+  #_(restart-agent server2 @server2)
+  #_(println @server2))
 
 (defn -main []
   (start!))
@@ -106,137 +115,110 @@
 
 
 
+;https://www.ygohub.com/api/all_cards
+;https://www.ygohub.com/api/card_info?name=
+(comment
+  (def cards-list (promise))
+
+  (deliver
+    cards-list
+    (:cards
+      (json/read-str
+        (:body
+          (client/get "https://www.ygohub.com/api/all_cards"))
+        :key-fn keyword)))
+
+  (count @cards-list)
+
+  (def card-effects (promise))
+
+  ;;FIXME WORKS but 8000 requests is to much to handle
+  (def get-effects
+    ;(take 5)
+    (doall
+      (pmap
+        (fn [name]
+          (json/read-str
+            (:body
+              (client/get
+                (str "https://www.ygohub.com/api/card_info?name=" name)))
+            ;{:async? true}
+            ;(fn [response] response)
+            ;(fn [exception] (.getMessage exception))))
+            :key-fn keyword))
+        @cards-list)))
+
+  (deliver
+    card-effects
+    get-effects)
+
+  (count @card-effects)
+
+  (json/read-str
+    (:body (client/get (str "https://www.ygohub.com/api/card_info?name=" (first @cards-list))))
+    ;{:async? true}
+    ;(fn [response] (:body response))
+    ;(fn [exception] (.getMessage exception))))
+    :key-fn keyword)
 
 
 
+  ;;updated version with help from community
+  ;;HINT oh yeah this will always fetch, doesn't save
+  (defn get-card-list!
+    []
+    (-> "http://www.ygohub.com/api/all_cards"
+        (client/get {:as        :json
+                     :insecure? true})
+        :body
+        (get :cards)))
 
+  (def card-list (get-card-list!))
 
+  (def card-effects (atom ()))
 
+  (def errors (atom ()))
+  (add-watch errors :error-alert (fn [& error] (println "Error: " error)))
 
+  (defn get-card-effects-async
+    [name]
+    (client/get (str "https://www.ygohub.com/api/card_info")
+                {:async? true
+                 :as     :json
+                 :query-params {:name name}}
+                (fn [response] (swap! card-effects conj (:body response)))
+                (fn [exception] (swap! errors conj [name (.getMessage exception)]))))
 
+  (def req-count (atom 0))
 
+  ;;FIXME at 7393 it runs out of memory at 750MB
+  (def cards-request
+    ;; Put it in a future so we can check the status from the repl
+    (future
+      (client/with-async-connection-pool
+        {:timeout 5 :threads 20 :insecure? true :default-per-route 20}
+        (doseq [card card-list]
+          (get-card-effects-async card)
+          (swap! req-count inc)
+          (Thread/sleep 500)))
+      (println "All Done!")))
 
+  (println @req-count)
 
+  (count @card-effects)
+  (pprint @card-effects)
+  (spit "card-effects.edn" (with-out-str (pprint @card-effects)))
 
-;(defn list-all [items]
-;  (transduce
-;    (comp (map combo/permutations)
-;          cat)
-;    conj
-;    []
-;    (rest (sort-by count (combo/subsets items)))))
-;
-;(defn keywords-list
-;  [keywords]
-;  (transduce
-;    (comp
-;      (map (partial join ","))
-;      (map #(assoc {:name "keywords" :content ""} :content %))
-;      (map #(identity [:meta %])))
-;    conj
-;    (list-all keywords)))
-;
-;(keywords-list ["YuGiOh" "custom"])
-;(list-all ["yugioh" "custom"])
+  (pprint (slurp "yugioh-card-effects.edn"))
 
+  (with-open [writer (writer "yugioh-card-effects.edn" :append true)]
+    (binding [*out* writer]
+      (doseq [card @card-effects]
+        (pr writer card))))
 
+  (def temp [])
+  (with-open [reader (reader "yugioh-card-effects.edn")]
+    (into temp (map edn/read (lazy-seq reader))))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;(def state
-;  (atom {:once-per :no}))
-;
-;(def once-per
-;  [:fieldset
-;   [:legend "Once Per..."]
-;   [:select {:name "once-per-option"}
-;    [:option {:name "no" :value "no" :on-change (fn [_] (swap! @state assoc :once-per :no))} "no"]
-;    [:option {:name "once-per" :value "once per" :on-change (fn [_] (swap! @state assoc :once-per :once-per))} "Once per "]]
-;   (when (= :once-per (get-in @state [:once-per]))
-;     [:span " Time "]
-;     [:select {:name "time"}
-;      [:option {:name "turn"} "turn"]
-;      [:option {:name "phase"} "phase"]])
-;
-;   [:span " output "]
-;   [:output {:name "output" :value "none"}]])
-
-;(def triggers
-;  [:fieldset
-;   [:legend "Trigger(s)"]
-;   [:span "Optional? "]
-;   [:select {:name "optional"}
-;    [:option {:value "no" :selected true} "no"]
-;    [:option {:value "when"} "when"]
-;    [:option {:value "if"} "if"]
-;    [:option {:value "during"} "during"]]
-;   [:input {:type "text" :name "trigger-text"}]
-;   [:br]
-;   [:span " Quick Effect? "]
-;   [:input {:type "checkbox" :name "quick-effect"}]])
-;
-;(def ignitions
-;  [:fieldset
-;   [:legend "Ignition(s)"]
-;   [:input {:type "text" :name "ignition-text"}]])
-;
-;(def effects
-;  [:fieldset
-;   [:legend "Effects(s)"]
-;   [:span "Optional? "]
-;   [:input {:type "checkbox" :name "optional"}]
-;   [:span " Conditional? "]
-;   [:input {:type "checkbox" :name "conditional"}]
-;   [:input {:type "text" :name "effect-text"}]
-;   [:span " Conditional Restriction? "]
-;   [:input {:type "text" :name "conditional-restriction"}]
-;
-;   [:span " Limit use? "]
-;   [:select {:name "only-once-per"}
-;    [:option {:value "no"} "no"]
-;    [:option {:value "activate"} "activate"]
-;    [:option {:value "use"} "use"]]
-;   [:span " Time "]
-;   [:select {:name "time"}
-;    [:option {:value "turn"} "turn"]
-;    [:option {:value "phase"} "phase"]]
-;
-;   [:br]
-;   [:span " Restrict to all? "]
-;   [:select {:name "once-per"}
-;    [:option {:value "no"} "no"]
-;    [:option {:value "once-per"} "Once per "]
-;    [:option {:value "only-once-per"} "Only once per "]]
-;   [:span " Time "]
-;   [:select {:name "time"}
-;    [:option {:value "turn"} "turn"]
-;    [:option {:value "phase"} "phase"]]])
-
+  (when (realized? cards-request)
+    (deref cards-request)))

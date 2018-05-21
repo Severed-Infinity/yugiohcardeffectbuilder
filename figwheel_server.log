@@ -1722,3 +1722,22 @@ notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/c
 Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 2.397 seconds.[0m
 notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 5.386 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 3.799 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.589 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 1.097 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/builder.js
+Compiling build :dev to "resources/public/js/main.js" from ["src/"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/main.js" in 5.905 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/events.js
+notifying browser that file changed:  resources/public/js/out/yugiohcardeffect/cljs/subscriptions.js

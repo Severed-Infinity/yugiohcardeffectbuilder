@@ -174,6 +174,7 @@
       [counts-view "activation-limit"]
 
       (when (not (= @(rf/subscribe [:activation-limit/count]) :none))
+        ;;TODO needs to be cleaned up, to much nesting
         [:span
          [:span " per "]
          [phases-actions-view "activation-limit"]])
@@ -269,7 +270,25 @@
   []
   [:fieldset
    [:legend "Trigger conditions"]
-   [:p "todo"]])
+   [:span
+    "Optional? "
+    [:input {:type      "checkbox"
+             :name      "optional-condition"
+             :checked   @(rf/subscribe [:condition/optional])
+             :on-change #(event % (rf/dispatch [:condition/optional-update (.. % -target -checked)]))}]]
+   (when (true? @(rf/subscribe [:condition/optional]))
+     [:select {:name      "condition-optional-options"
+               :on-change #(event % @(rf/dispatch [:condition/optional-value-update (keyword (.. % -target -value))]))}
+      [:option {:name  "none"
+                :value :none}
+       "None"]
+      [:option {:name  "if"
+                :value :if}
+       "If"]
+      [:option {:name  "when"
+                :value :when}
+       "When"]])])
+
 
 (defn trigger
   "View for all trigger components"

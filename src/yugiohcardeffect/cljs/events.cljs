@@ -20,6 +20,8 @@
         (assoc-in [:timing :target-indicator] :the)
         (assoc :timing/type :main-phase)
         #_(assoc-in [:timing :type] :main-phase)
+        (assoc :condition/optional false)
+        (assoc :condition/optional-value :none)
 
 
         #_((assoc-in [:activation-restriction :state] false
@@ -102,6 +104,25 @@
     :timing-type-update
     (fn [state [_ value]]
       (assoc-in state [:timing :type] value)))
+
+(rf/reg-event-db
+  :condition/optional-update
+  (fn [state [_ value]]
+    (assoc state :condition/optional value)))
+
+(rf/reg-event-db
+  :condition/optional-value-update
+  (fn [state [_ value]]
+    (assoc state :condition/optional-value value)))
+
+
+
+
+
+
+
+
+
 
 
 

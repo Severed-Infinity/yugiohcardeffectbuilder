@@ -64,6 +64,20 @@
   (fn [state [_]]
     (:timing/type state)))
 
+(rf/reg-sub
+  :condition/optional
+  (fn [state [_]]
+    (:condition/optional state)))
+
+
+(rf/reg-sub
+  :condition/optional-value
+  (fn [state [_]]
+    (:condition/optional-value state)))
+
+
+
+
 
 
 

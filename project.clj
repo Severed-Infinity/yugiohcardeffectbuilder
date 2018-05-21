@@ -10,8 +10,10 @@
                  [hiccup "1.0.5"]
                  [aleph "0.4.4"]
                  [bidi "2.1.3"]
-                 [yada "1.2.11"]
+                 [yada "1.2.13"]
                  [aero "1.1.3"]
+
+                 [clj-http "3.9.0"]
 
                  [reagent "0.8.1"]
                  [re-frame "0.10.5"]]
